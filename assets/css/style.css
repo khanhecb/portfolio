@@ -1,0 +1,108 @@
+:root {
+    --base: #F8FAFC;         
+    --bg-card: #FFFFFF;    
+    --text-primary: #0F172A;    
+    --text-secondary: #64748B;  
+    --accent: #2563EB;         
+    --accent-glow: rgba(37, 99, 235, 0.12);
+    --border-color: #E2E8F0;    
+}
+
+html, body {
+    font-family: Inter, Roboto, -apple-system, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-primary);
+    background-color: var(--base);
+}
+
+/* Heading */
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {font-size: 3em;}
+h2 {font-size: 2.5em;}
+h3 {font-size: 2em;}
+h4 {font-size: 1.8em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1.2em}
+
+/* Layout */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 36px;
+}
+
+
+.d-flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-column { flex-direction: column; }
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.col-12 { width: 100%; }
+.col-md-6 { width: 100%; }
+
+.container--narrow  {max-width: 1100px;}
+.container--medium  {max-width: 1440px;}
+.container--full    {max-width: 100%;}
+
+/* Button */
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    border: solid 1px var(--accent);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.button__primary {
+    background-color: var(--accent);
+    color: var(--base);
+}
+
+.button__primary:hover {
+    background-color: var(--base);
+    color: var(--accent)
+}
+
+.button_second {
+    background-color: var(--base);
+    color: var(--accent)
+}
+
+.button__second:hover {
+    background-color: var(--accent);
+    color: var(--base);
+}
+
+#hero {
+    background-color: red;
+}
+
+#hero-1 {
+    background-color: aqua;
+}
+#hero-2 {
+    background-color: green;
+}
+
+.d-flex-md { flex-direction: column; }
+
+@media (min-width: 768px) {
+    .d-flex-md { flex-direction: row; }
+    .col-md-6 { width: 50%; }
+}
+
