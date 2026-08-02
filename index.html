@@ -7,44 +7,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script.js" defer></script>
 </head>
 <body>
 	<header></header>
+
 	<main>
-		<!-- Hero Section -->
-		<section id="hero" class="container d-flex d-flex-md flex-row col-12 container--narrow">
-			<div id="hero-1" class="d-flex flex-column col-md-6">
-				<h1>Hello World</h1>
-				<p>WordPress Developer</p>
-			</div>
-			<div id="hero-2" class="d-flex flex-column col-md-6">
-				<button class="button button__primary"> Click Here </button>
-				<button class="button button__second"> Click Here </button>
-			</div>
-		</section>
 
-		<!-- About Me Section -->
-		<section>
+		<div data-include="sections/hero.html"></div>
 
-		</section>
+		<div data-include="sections/about.html"></div>
 
-		<!-- Featured Projects Section -->
-		<section>
+		<div data-include="sections/skills.html"></div>
 
-		</section>
+		<div data-include="sections/projects.html"></div>
 
-		<!-- Experience / Timeline Section  -->
-		<section>
-
-		</section>
-
-		<!-- Contact Section -->
-		 <section>
-			
-		 </section>
+		<div data-include="sections/contact.html"></div>
 
 	</main>
+
+
 	<footer></footer>
 </body>
 </html>

@@ -10,23 +10,26 @@
 
 html, body {
     font-family: Inter, Roboto, -apple-system, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     color: var(--text-primary);
     background-color: var(--base);
 }
 
-/* Heading */
+/* Typo */
 h1, h2, h3 {
     font-weight: 600;
 }
 
 h1 {font-size: 3em;}
 h2 {font-size: 2.5em;}
-h3 {font-size: 2em;}
-h4 {font-size: 1.8em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
 h5 {font-size: 1.5em;}
 h6 {font-size: 1.2em}
+
+a {color: var(--accent); text-decoration: none;}
+
 
 /* Layout */
 .container {
@@ -36,8 +39,10 @@ h6 {font-size: 1.2em}
     padding: 36px;
 }
 
-
 .d-flex { display: flex; }
+.d-flex-md { flex-direction: column; }
+
+
 .flex-row { flex-direction: row; }
 .flex-column { flex-direction: column; }
 .flex-center {
@@ -87,19 +92,6 @@ h6 {font-size: 1.2em}
     background-color: var(--accent);
     color: var(--base);
 }
-
-#hero {
-    background-color: red;
-}
-
-#hero-1 {
-    background-color: aqua;
-}
-#hero-2 {
-    background-color: green;
-}
-
-.d-flex-md { flex-direction: column; }
 
 @media (min-width: 768px) {
     .d-flex-md { flex-direction: row; }
