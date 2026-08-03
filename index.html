@@ -6,21 +6,28 @@
     <title>Nguyễn Hữu Khánh (KhanhECB) — WordPress & System Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/home.css">
 	<script src="assets/js/script.js" defer></script>
 </head>
 <body>
-	<header></header>
+	<header id="header" class="container flex flex-column flex-wrap container--narrow">
+		<div data-include="parts/header.html"></div>
+	</header>
 
-	<main id="main" class="container d-flex d-flex-md flex-row col-12 container--narrow">
+	<main id="main" class="container flex flex-column container--narrow">
 		<div data-include="sections/hero.html"></div>
+		<div data-include="sections/contact.html"></div>
 		<div data-include="sections/about.html"></div>
 		<div data-include="sections/skills.html"></div>
 		<div data-include="sections/projects.html"></div>
-		<div data-include="sections/contact.html"></div>
 	</main>
 
-	<footer></footer>
+	<footer id="footer"  class="container flex flex-column container--narrow">
+		<div data-include="parts/footer.html"></div>
+	</footer>
 </body>
 </html>
