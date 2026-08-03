@@ -57,6 +57,11 @@ a {
     color: var(--accent);
 }
 
+section {
+    margin-top: var(--spacing-xs);
+    margin-bottom: var(--spacing-xs);
+}
+
 .text-left {
     text-align: left;
 }
@@ -152,10 +157,8 @@ a {
 
 .tags {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
-    font-size: calc(var(--font-size-base) * 0.7);
+    font-size: calc(var(--font-size-base) * 0.8);
     padding-left: 0;
     margin: 0;
 }
@@ -208,3 +211,8 @@ a {
     height: 24px;
 }
 
+@media  screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
