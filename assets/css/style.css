@@ -2,10 +2,11 @@
     /* Color */
     --base: #ffffff;         
     --bg-card: #ffffff;    
-    --text-primary: #000000;    
-    --text-secondary: #eee;  
     --accent: #0d9488;    
-    --accent-hover: #0dd1c1;     
+    --accent-hover: #0dd1c1;
+    --text-primary: #000000;    
+    --text-secondary: #475569;  
+    --text-accent: #0d9488;
     --accent-glow: rgba(37, 99, 235, 0.12);
     --border-color: #E2E8F0;
 
@@ -64,6 +65,18 @@ section {
 
 .text-left {
     text-align: left;
+}
+
+.text-color-primary {
+    color: var(--text-primary);
+}
+
+.text-color-second {
+    color: var(--text-secondary);
+}
+
+.text-color-accent {
+    color: var(--accent)
 }
 
 /* Layout */
