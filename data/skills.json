@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Quản trị hệ thống",
+    "tags": [
+      "Cpanel",
+      "DirectAdmin",
+      "SSH & FTP",
+      "WP-CLI",
+      "Linux & Bash",
+      "DNS",
+      "Web Mail",
+      "Cloud Flare"
+    ]
+  },
+  {
+    "title": "WordPress UI",
+    "tags": [
+      "Flatsome (UX Builder)",
+      "Elementor",
+      "Gutenbern",
+      "HTML, CSS, JS"
+    ]
+  },
+  {
+    "title": "WordPress Backend",
+    "tags": [
+      "WP Hook",
+      "Woocommerce REST",
+      "WP Query",
+      "PHP",
+      "SMTP",
+      "Sepay, Paypal",
+      "Seat Planner"
+    ]
+  },
+  {
+    "title": "Automation",
+    "tags": [
+      "Python",
+      "WP Scan",
+      "Telegram API",
+      "Google Sheet API"
+    ]
+  }
+]
