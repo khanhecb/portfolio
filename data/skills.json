@@ -4,12 +4,12 @@
     "tags": [
       "Cpanel",
       "DirectAdmin",
-      "SSH & FTP",
+      "SSH",
+      "FTP",
+      "Bash",
       "WP-CLI",
-      "Linux & Bash",
       "DNS",
-      "Web Mail",
-      "Cloud Flare"
+      "Web Mail"
     ]
   },
   {
@@ -18,7 +18,8 @@
       "Flatsome (UX Builder)",
       "Elementor",
       "Gutenbern",
-      "HTML, CSS, JS"
+      "HTML & CSS",
+      "JS"
     ]
   },
   {
@@ -29,7 +30,8 @@
       "WP Query",
       "PHP",
       "SMTP",
-      "Sepay, Paypal",
+      "Sepay",
+      "Paypal",
       "Seat Planner"
     ]
   },
@@ -37,7 +39,7 @@
     "title": "Automation",
     "tags": [
       "Python",
-      "WP Scan",
+      "WPScan",
       "Telegram API",
       "Google Sheet API"
     ]

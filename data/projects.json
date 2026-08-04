@@ -23,10 +23,8 @@
         "WordPress",
         "Flatsome",
         "Woocommerce",
-        "Cloudflare",
         "HTML & CSS",
-        "PHP",
-        "ACF"
+        "PHP"
     ]
   },
   {
@@ -38,7 +36,7 @@
         "Flatsome",
         "Woocommerce",
         "Cloudflare",
-        "HTML & CSS & JS",
+        "HTML  CSS  JS",
         "Redis"
     ]
   },
@@ -50,7 +48,7 @@
         "WordPress",
         "Ainexa",
         "Elementor",
-        "HTML/CSS/JS",
+        "HTML CSS JS",
         "Light/Dark Mode"
     ]
   },
@@ -60,12 +58,12 @@
     "url": "https://danhcaminhcanh.com",
     "tags": [
         "WordPress",
-        "Gutenberg",
         "Woocommerce",
+        "Gutenberg",
+        "Sepay",
         "Python",
         "GG Sheet",
-        "Telegram",
-        "Sepay"
+        "Telegram"
     ]
   },
   {
@@ -76,17 +74,8 @@
         "WordPress",
         "FSE",
         "Gutenberg",
-        "ACF"
-    ]
-  },
-  {
-    "year": "2025",
-    "name": "Cricket Fashion",
-    "url": "https://cricketfashion.vn/",
-    "tags": [
-        "WordPress",
-        "Elementor",
-        "Theme The7"
+        "ACF",
+        "PHP"
     ]
   },
   {
@@ -97,6 +86,16 @@
         "WordPress",
         "Paypal",
         "Forminator"
+    ]
+  },
+  {
+    "year": "2025",
+    "name": "Cricket Fashion",
+    "url": "https://cricketfashion.vn/",
+    "tags": [
+        "WordPress",
+        "Elementor",
+        "Theme The7"
     ]
   },
   {
