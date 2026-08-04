@@ -9,35 +9,6 @@
     box-shadow: none;
 }
 
-/* Block Container */
-.block-card-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.block-card-item {
-    display: flex;
-    justify-content: start;
-    align-items: stretch;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 12px;
-    padding: var(--spacing-xl);
-    min-width: 300px;
-    width: 40%;
-    max-width: 100%;
-    box-shadow: 0 10px 15px -5px color-mix(in srgb, var(--accent) 20%, transparent);
-}
-
-.block-card-item:hover {
-    box-shadow: 0 10px 25px -5px color-mix(in srgb, var(--accent) 40%, transparent);
-    transform: translateY(-8px);
-}
-
 @media screen and ( max-width: 768px) {
     .block-card-item {
         width: 100%;
@@ -47,15 +18,139 @@
 }
 
 
+
+/* Project Section */
+
 #projects {
     padding: 60px 0;
 }
 
-/* Table */
-td {
+#projects th, 
+#projects td {
+    vertical-align: top;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#projects td {
     padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#projects thead > tr > th {
+    border-bottom: solid 2px var(--border-color)
 }
 
 
 
 
+.tech-timeline {
+    position: relative;
+    padding-left: 2.5rem;
+    margin: 2rem 0;
+}
+
+/* Đường kẻ dọc giao diện kỹ thuật */
+.tech-timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background-color: var(--border-color, #e2e8f0);
+}
+
+/* Từng mục sự kiện */
+.tech-timeline .timeline-item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.tech-timeline .timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Kiểu node mới: Hình vuông bo góc phong cách Code-Tag */
+.tech-timeline .timeline-node {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -2.5rem;
+    top: 3px;
+    width: 22px;
+    height: 22px;
+    background-color: var(--bg-color, #ffffff);
+    border: 2px solid var(--accent-color, #0d9488);
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+/* Lõi bên trong node */
+.tech-timeline .timeline-node::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color, #0d9488);
+    border-radius: 2px;
+    transition: transform 0.25s ease;
+}
+
+/* Hiệu ứng tương tác khi hover vào mốc */
+.tech-timeline .timeline-item:hover .timeline-node {
+    background-color: var(--accent-color, #0d9488);
+    box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15);
+}
+
+.tech-timeline .timeline-item:hover .timeline-node::after {
+    background-color: var(--bg-color, #ffffff);
+}
+
+/* Kiểu Card mới: Khung nền xám nhạt với đường viền nhấn mạnh bên trái */
+.tech-timeline .timeline-card {
+    background-color: #f8fafc;
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-left: 4px solid var(--accent-color, #0d9488);
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.tech-timeline .timeline-item:hover .timeline-card {
+    background-color: #ffffff;
+    border-color: var(--border-color, #e2e8f0);
+    border-left-color: var(--accent-color, #0d9488);
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+/* Chi tiết typography bên trong Card */
+.tech-timeline .timeline-meta {
+    margin-bottom: 0.35rem;
+}
+
+.tech-timeline .timeline-year {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-color, #0d9488);
+}
+
+.tech-timeline .timeline-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-main, #0f172a);
+    margin-bottom: 0.3rem;
+}
+
+.tech-timeline .timeline-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted, #475569);
+    line-height: 1.5;
+}
