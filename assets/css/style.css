@@ -1,6 +1,6 @@
 :root {
-    /* Color */
-    --base: #ffffff;         
+    /* Light */
+    /* --base: #ffffff;         
     --bg-card: #ffffff;    
     --accent: #0d9488;    
     --accent-hover: #0dd1c1;
@@ -8,7 +8,20 @@
     --text-secondary: #475569;  
     --text-accent: #0d9488;
     --accent-glow: rgba(37, 99, 235, 0.12);
-    --border-color: #E2E8F0;
+    --border-color: #E2E8F0; */
+
+    /* Dark */
+    --base: #0f172a;           
+    --bg-card: #1e293b;        
+    --accent: #2dd4bf;         
+    --accent-hover: #5eead4;   
+    
+    --text-primary: #f8fafc;   
+    --text-secondary: #94a3b8; 
+    --text-accent: #2dd4bf;   
+    
+    --accent-glow: rgba(45, 212, 191, 0.15);
+    --border-color: #334155;
 
     /* Font */
     --font-heading: "Inter", sans-serif;
@@ -38,7 +51,11 @@ html, body {
     max-width: 100%;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-left: var(--spacing-xl);
+    padding-right: var(--spacing-xl);
 }
+
+
 
 /* Typo */
 h1, h2, h3, h4, h5, h6 {
@@ -78,6 +95,12 @@ section {
 .text-color-accent {
     color: var(--accent)
 }
+
+.font-size-small { font-size: 1em;}
+.font-size-medium {font-size: 1.5em}
+.font-size-large {font-size: 2em}
+.font-size-very-large {font-size: 2.5em}
+
 
 /* Layout */
 .container {
@@ -150,33 +173,9 @@ section {
     transition: all 0.2s ease;
 }
 
-.button__primary {
-    background-color: var(--accent);
-    color: var(--base);
-}
-
-.button__primary:hover {
-    background-color: var(--base);
-    color: var(--accent)
-}
-
-.button_second {
-    background-color: var(--base);
-    color: var(--accent)
-}
-
-.button__second:hover {
-    background-color: var(--accent);
-    color: var(--base);
-}
-
-.text-hightlight {
+.text-highlight {
     color: var(--accent);
 }
-
-
-
-
 
 /* Component */
 
@@ -200,25 +199,8 @@ section {
     min-width: 50px;
     font-weight: var(--font-weight-normal);
     border-radius: var(--border-radius-circle);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(241, 234, 234, 0.6);
 }
-
-.tag-item-highlight {
-    background-color: var(--accent);
-    color: red;
-    border-radius: 6px;
-}
-
-.tag-item-highlight img, 
-.tag-item-highlight span {
-    filter: brightness(0) invert(1);
-}
-
-.tag-item-highlight:hover img, 
-.tag-item-highlight:hover span {
-    filter: initial;
-}
-
 
 .tag-item a {
     display: flex;
@@ -230,6 +212,21 @@ section {
 .tag-item:hover {
     background-color: var(--accent);
     color: var(--base);
+}
+
+.tag-item-highlight {
+    background-color: var(--accent);
+    border-radius: 6px;
+}
+
+.tag-item-highlight img, 
+.tag-item-highlight span {
+    filter: brightness(0) invert(1);
+}
+
+.tag-item-highlight:hover img, 
+.tag-item-highlight:hover span {
+    filter: initial;
 }
 
 .tag-item img {
@@ -245,7 +242,18 @@ section {
     .width-mobile-100  { width: 100%; }
     .width-mobile-50   { width: 50%; }
     .width-mobile-40   { width: 40%; }
+
+
+    :root {
+        /* Spacing */
+        --spacing-xs: 4px;
+        --spacing-sm: 6px;
+        --spacing-md: 8px;
+        --spacing-lg: 10px;
+        --spacing-xl: 12px;
+    }
 }
+
 
 
 /* Component block card */

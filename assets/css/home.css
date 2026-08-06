@@ -1,5 +1,5 @@
 #contact .tag-item a {
-    color: black !important;
+    color: var(--accent-color) !important;
 }
 
 #contact .tag-item:hover {
@@ -17,8 +17,21 @@
     }
 }
 
+/* About Section */
+#about-left-layout {
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 
+#about-left-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+
+
+}
 /* Project Section */
 
 #projects {
@@ -45,9 +58,6 @@
 #projects thead > tr > th {
     border-bottom: solid 2px var(--border-color)
 }
-
-
-
 
 .tech-timeline {
     position: relative;

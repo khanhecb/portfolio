@@ -18,16 +18,23 @@ async function renderProjects(dataFile = './data/projects.json', containerId = '
         }
 
         // Render HTML
-        tbody.innerHTML = projectsData.map(({ name, url, year, tags }) => {
+        tbody.innerHTML = projectsData.map(({ name, url, year, github, tags }) => {
             const hasUrl = Boolean(url);
+            const hasGithub = Boolean(github);
+
 
             const nameColumn = hasUrl 
                 ? `<td><a class="text-color-primary" href="${url}" target="_blank" rel="noopener">${name}</a></td>`
                 : `<td class="text-color-primary">${name}</td>`;
 
             const linkColumn = hasUrl 
-                ? `<td class="hide-on-mobile"><a href="${url}" target="_blank" rel="noopener">${url}</a></td>`
+                ? `<td class="hide-on-mobile"><a href="${url}" target="_blank" rel="noopener">URL</a></td>`
                 : `<td class="hide-on-mobile"></td>`;
+            
+            const githubColumn = hasGithub 
+                ? `<td class="hide-on-mobile"><a href="${github}" target="_blank" rel="noopener">Github</a></td>`
+                : `<td class="hide-on-mobile"></td>`;
+
 
             const tagsHTML = Array.isArray(tags) 
                 ? tags.map(tag => `<span class="tag-item">${tag}</span>`).join('')
@@ -38,6 +45,7 @@ async function renderProjects(dataFile = './data/projects.json', containerId = '
                     <td class="text-color-second">${year}</td>
                     ${nameColumn}
                     ${linkColumn}
+                    ${githubColumn}
                     <td class="tags flex flex-wrap hide-on-mobile">${tagsHTML}</td>
                 </tr>
             `;
