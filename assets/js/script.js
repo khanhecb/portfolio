@@ -135,13 +135,71 @@ async function renderExpSection( dataFile = './data/exp.json', containerLayoutId
 }
 
 
+function animationScrollHeader() {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    let lastScrollY = window.scrollY;
+    const scrollThreshold = 10;
+    let ticking = false;
+
+    const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+
+        // 1. Nếu ở sát đỉnh trang (<= 50px), giữ header luôn hiện và xóa shadow
+        if (currentScrollY <= 50) {
+            header.classList.remove('header-hidden', 'header-scrolled');
+            lastScrollY = currentScrollY;
+            ticking = false;
+            return;
+        }
+
+        // Thêm hiệu ứng shadow khi cuộn xuống xa đỉnh trang
+        header.classList.add('header-scrolled');
+
+        // 2. Kiểm tra khoảng cách cuộn vượt threshold mới xử lý
+        const scrollDifference = Math.abs(currentScrollY - lastScrollY);
+
+        if (scrollDifference > scrollThreshold) {
+            if (currentScrollY > lastScrollY) {
+                // Kéo xuống -> Ẩn Header
+                header.classList.add('header-hidden');
+            } else {
+                // Kéo lên -> Hiện Header
+                header.classList.remove('header-hidden');
+            }
+            lastScrollY = currentScrollY;
+        }
+
+        ticking = false;
+    };
+
+    // Thêm passive: true để tối ưu mượt mà khi cuộn trang
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(handleScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+}
+
+
 
 async function initApp() {
     await loadIncludes();
     renderProjects();
     renderLayoutSkills();
-    renderExpSection();
+    // renderExpSection();
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', animationScrollHeader);
+    } else {
+        animationScrollHeader();
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
+
+
+
 

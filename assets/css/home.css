@@ -1,5 +1,5 @@
 #contact .tag-item a {
-    color: var(--accent-color) !important;
+    color: var(--color-primary) !important;
 }
 
 #contact .tag-item:hover {
@@ -96,8 +96,8 @@
     top: 3px;
     width: 22px;
     height: 22px;
-    background-color: var(--bg-color, #ffffff);
-    border: 2px solid var(--accent-color, #0d9488);
+    background-color: var(--color-base, #ffffff);
+    border: 2px solid var(--color-primary, #0d9488);
     border-radius: 4px;
     transition: all 0.25s ease;
 }
@@ -107,26 +107,26 @@
     content: '';
     width: 8px;
     height: 8px;
-    background-color: var(--accent-color, #0d9488);
+    background-color: var(--color-primary, #0d9488);
     border-radius: 2px;
     transition: transform 0.25s ease;
 }
 
 /* Hiệu ứng tương tác khi hover vào mốc */
 .tech-timeline .timeline-item:hover .timeline-node {
-    background-color: var(--accent-color, #0d9488);
+    background-color: var(--color-primary, #0d9488);
     box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.15);
 }
 
 .tech-timeline .timeline-item:hover .timeline-node::after {
-    background-color: var(--bg-color, #ffffff);
+    background-color: var(--color-base, #ffffff);
 }
 
 /* Kiểu Card mới: Khung nền xám nhạt với đường viền nhấn mạnh bên trái */
 .tech-timeline .timeline-card {
     background-color: #f8fafc;
     border: 1px solid var(--border-color, #e2e8f0);
-    border-left: 4px solid var(--accent-color, #0d9488);
+    border-left: 4px solid var(--color-primary, #0d9488);
     border-radius: 0 10px 10px 0;
     padding: 1.25rem 1.5rem;
     transition: all 0.2s ease;
@@ -135,7 +135,7 @@
 .tech-timeline .timeline-item:hover .timeline-card {
     background-color: #ffffff;
     border-color: var(--border-color, #e2e8f0);
-    border-left-color: var(--accent-color, #0d9488);
+    border-left-color: var(--color-primary, #0d9488);
     box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
 }
 
@@ -149,18 +149,71 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--accent-color, #0d9488);
+    color: var(--color-primary, #0d9488);
 }
 
 .tech-timeline .timeline-title {
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--text-main, #0f172a);
     margin-bottom: 0.3rem;
 }
 
 .tech-timeline .timeline-desc {
     font-size: 0.95rem;
-    color: var(--text-muted, #475569);
     line-height: 1.5;
 }
+
+
+/* Khống chế kích thước SVG */
+.tag-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: currentColor;
+}
+
+.tag-icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Khoảng cách giữa các icon */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact-info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+#contact-info::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0 auto;
+    background-color: var(--color-primary);
+    margin-inline: auto;
+
+}
+
+#contact-info-list li {
+    padding-bottom: 12px;
+}
+
+
+#contact-info-list li:last-child {
+    padding-bottom: 0;
+}
+
+#contact-info-list li:hover {
+    transform: translateY(-4px);
+    transition: transform 0.25s ease;
+    cursor: pointer;
+}
+
+
