@@ -32,9 +32,26 @@
             </div>
 
             <div class="only-mobile">
-                <a id="resume-button-mobile" href="" class="button button-primary">
-                    <span class="text-color-accent text-strong nav-button">Resume</span>
-                </a>
+                <div class="">
+                    <a id="resume-button-mobile" href="" class="button button-primary">
+                        <span class="text-color-accent text-strong nav-button">Resume</span>
+                    </a>
+                </div>
+
+                <nav class="nav-mobile">
+                    <a href="#about" class="nav-item">
+                        <span class="text-color-accent text-strong nav-number">01.</span>
+                        <span class="text-color-primary nav-title">Về tôi</span>
+                    </a>
+                    <a href="#skills" class="nav-item">
+                        <span class="text-color-accent text-strong nav-number">02.</span>
+                        <span class="text-color-primary nav-title">Skill</span>
+                    </a>
+                    <a href="#projects" class="nav-item">
+                        <span class="text-color-accent text-strong nav-number">03.</span>
+                        <span class="text-color-primary nav-title">Projects</span>
+                    </a>
+                </nav>
             </div>
         </div>
     </div>
@@ -59,5 +76,17 @@
         justify-content: space-between;
         align-items: center;
     }
+    
+    @media screen and (max-width: 1024px) {
+        #header-mobile {
+            display: none;
+        }
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
 </style>
 

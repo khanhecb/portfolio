@@ -1,10 +1,51 @@
+<style>
+	.block-card-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;
+		flex-direction: row;
+		gap: 12px;
+	}
+
+	.block-card-container > .block-card-item {
+		display: flex;
+		justify-content: space-between;
+		align-items: start;
+		flex-wrap: nowrap;
+		width: 32%;
+		aspect-ratio: 1/1;
+		background-color: var(--color-base-hover);
+		border: 2px solid var(--color-primary);
+		gap: 1%;
+		border-radius: 4px;
+		padding: 24px;
+	}
+
+	.block-card-item > h3 {
+		color: var(--text-primary);
+		text-align: left !important;
+	}
+	.block-card-item > p {
+		color: var(--text-secondary);
+	}
+	.block-card-item:hover {
+		h3 {
+			color: var(--color-primary);
+		}
+		p {
+			color: var(--color-accent);
+		}
+	}
+
+</style>
+
 <section id="skills" class="container">
-    
     <div class="container block-card-container">
 		<!-- Skill Group -->
-		<div class="container block-card-item">
+		<div class="block-card-item">
 			<!-- System Admin -->
 			<h3 class="title">Quản trị hệ thống</h3>
+			<p class="text-color-primary">Tôi đảm nhận các công việc liên quan đến quản lý hệ Hosting như: Migrate site, Backup code và DB, Deploy WordPress Web, Sửa các lỗi của Website</p>
 			<ul class="tags flex-wrap flex-row">
 				<li class="tag-item"> Cpanel</li>
 				<li class="tag-item"> DirectAdmin </li>
@@ -18,7 +59,7 @@
 		</div>
 
 		<!-- WordPress UI -->
-		<div class="container block-card-item">
+		<div class="block-card-item">
 			<!-- System Admin -->
 			<h3 class="title">WordPress UI</h3>
 			<ul class="tags flex-wrap flex-row">
@@ -29,7 +70,7 @@
 			</ul>
 		</div>
 
-		<div class="container block-card-item">
+		<div class="block-card-item">
 			<h3 class="title">WordPress Backend</h3>
 			<ul class="tags flex-wrap flex-row">
 				<li class="tag-item"> WP Hook </li>
@@ -43,7 +84,7 @@
 		</div>
 
 		<!-- Automation skill -->
-		<div class="container block-card-item">
+		<div class="block-card-item">
 			<!-- System Admin -->
 			<h3 class="title">Automation</h3>
 			<ul class="tags flex-wrap flex-row">
@@ -54,6 +95,5 @@
 			</ul>
 		</div>
 	</div>
-
-
 </section>
+
