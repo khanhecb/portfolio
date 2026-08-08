@@ -1,99 +1,79 @@
+<head>
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
 <style>
-	.block-card-container {
-		display: flex;
-		justify-content: space-between;
-		align-items: stretch;
-		flex-direction: row;
-		gap: 12px;
+	.skills-grid-container {
+		max-width: 100%;
+		margin: 0 auto;
 	}
 
-	.block-card-container > .block-card-item {
-		display: flex;
-		justify-content: space-between;
-		align-items: start;
-		flex-wrap: nowrap;
-		width: 32%;
-		aspect-ratio: 1/1;
-		background-color: var(--color-base-hover);
-		border: 2px solid var(--color-primary);
-		gap: 1%;
-		border-radius: 4px;
-		padding: 24px;
+	.grid-title {
+		font-size: 1.5rem;
+		margin-bottom: 32px;
+		color: #f8fafc;
 	}
 
-	.block-card-item > h3 {
-		color: var(--text-primary);
-		text-align: left !important;
+	/* ==========================================================================
+       ICON GRID LAYOUT
+       ========================================================================== */
+	.skills-icon-grid {
+		display: grid;
+		/* Tự động chia cột đều nhau, tối thiểu 110px mỗi ô */
+		grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+		gap: 20px;
 	}
-	.block-card-item > p {
+
+	.skill-grid-item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 20px 10px;
+		border-radius: 12px;
+		cursor: pointer;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.skill-grid-item i {
+		font-size: 2.8rem;
+		color: var(--text-secondary); /* Mặc định xám chìm */
+		margin-bottom: 12px;
+		transition: all 0.3s ease;
+	}
+
+	.skill-grid-item span {
+		font-size: 0.85rem;
+		font-weight: 500;
 		color: var(--text-secondary);
-	}
-	.block-card-item:hover {
-		h3 {
-			color: var(--color-primary);
-		}
-		p {
-			color: var(--color-accent);
-		}
+		transition: color 0.3s ease;
 	}
 
+	/* ==========================================================================
+       HOVER & BRAND COLOR GLOW EFFECTS
+       ========================================================================== */
+	.skill-grid-item:hover {
+		transform: translateY(-6px);
+		background: rgba(255, 255, 255, 0.03); /* Nền mờ nhẹ khi hover */
+	}
+
+	.skill-grid-item:hover span {
+		color: var(--text-primary);
+	}
+
+	/* Hover theo màu thương hiệu chuẩn của từng công nghệ */
+	.skill-grid-item.html:hover i { color: #e34f26; filter: drop-shadow(0 0 12px rgba(227, 79, 38, 0.4)); }
+	.skill-grid-item.css:hover i { color: #1572b6; filter: drop-shadow(0 0 12px rgba(21, 114, 182, 0.4)); }
+	.skill-grid-item.js:hover i { color: #f7df1e; filter: drop-shadow(0 0 12px rgba(247, 223, 30, 0.4)); }
+	.skill-grid-item.php:hover i { color: #777bb4; filter: drop-shadow(0 0 12px rgba(119, 123, 180, 0.4)); }
+	.skill-grid-item.wp:hover i { color: #21759b; filter: drop-shadow(0 0 12px rgba(33, 117, 155, 0.4)); }
+	.skill-grid-item.mysql:hover i { color: #4479a1; filter: drop-shadow(0 0 12px rgba(68, 121, 161, 0.4)); }
+	.skill-grid-item.git:hover i { color: #f05032; filter: drop-shadow(0 0 12px rgba(240, 80, 50, 0.4)); }
+	.skill-grid-item.sass:hover i { color: #cc6699; filter: drop-shadow(0 0 12px rgba(204, 102, 153, 0.4)); }
+	.skill-grid-item.redis:hover i { color: #c11f2b; filter: drop-shadow(0 0 12px #dd2925); }
+	.skill-grid-item.python:hover i { color: #2D709D; filter: drop-shadow(0 0 12px #2D709D); }
+	.skill-grid-item.github:hover i { color: #ffffff; filter: drop-shadow(0 0 12px #0f172a); }
+	.skill-grid-item.filezilla:hover i { color: #C4000A; filter: drop-shadow(0 0 12px #0f172a); }
 </style>
 
-<section id="skills" class="container">
-    <div class="container block-card-container">
-		<!-- Skill Group -->
-		<div class="block-card-item">
-			<!-- System Admin -->
-			<h3 class="title">Quản trị hệ thống</h3>
-			<p class="text-color-primary">Tôi đảm nhận các công việc liên quan đến quản lý hệ Hosting như: Migrate site, Backup code và DB, Deploy WordPress Web, Sửa các lỗi của Website</p>
-			<ul class="tags flex-wrap flex-row">
-				<li class="tag-item"> Cpanel</li>
-				<li class="tag-item"> DirectAdmin </li>
-				<li class="tag-item"> SSH / FTP</li>
-				<li class="tag-item"> WP-CLI </li>
-				<li class="tag-item"> Linux / Bash </li>
-				<li class="tag-item"> DNS </li>
-				<li class="tag-item"> Web Mail </li>
-				<li class="tag-item"> Cloud Flare</li>
-			</ul>
-		</div>
 
-		<!-- WordPress UI -->
-		<div class="block-card-item">
-			<!-- System Admin -->
-			<h3 class="title">WordPress UI</h3>
-			<ul class="tags flex-wrap flex-row">
-				<li class="tag-item"> Flatsome (UX Builder)</li>
-				<li class="tag-item"> Elementor </li>
-				<li class="tag-item"> Gutenbern </li>
-				<li class="tag-item"> HTML, CSS, JS </li>
-			</ul>
-		</div>
-
-		<div class="block-card-item">
-			<h3 class="title">WordPress Backend</h3>
-			<ul class="tags flex-wrap flex-row">
-				<li class="tag-item"> WP Hook </li>
-				<li class="tag-item"> Woocommerce REST </li>
-				<li class="tag-item"> WP Query </li>
-				<li class="tag-item"> PHP </li>
-				<li class="tag-item"> SMTP </li>
-				<li class="tag-item"> Sepay, Paypal </li>
-				<li class="tag-item"> Seat Planner </li>
-			</ul>
-		</div>
-
-		<!-- Automation skill -->
-		<div class="block-card-item">
-			<!-- System Admin -->
-			<h3 class="title">Automation</h3>
-			<ul class="tags flex-wrap flex-row">
-				<li class="tag-item"> Python </li>
-                <li class="tag-item"> WP Scan </li>
-				<li class="tag-item"> Telegram API </li>
-				<li class="tag-item"> Google Sheet API </li>
-			</ul>
-		</div>
-	</div>
-</section>
-
+<div id="skills"></div>

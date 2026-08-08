@@ -1,120 +1,113 @@
 [
   {
-    "year": "2025 - Now",
-    "name": "Bảo trì",
-    "url": "",
-    "tags": [
-      "cPanel",
-      "SSH",
-      "Maintain",
-      "Migrate",
-      "Deploy",
-      "Backup",
-      "Error",
-      "Web Mail",
-      "DNS"
+    "date": "8/2026",
+    "title": "Portfolio",
+    "description": "Dự án giới thiệu bản thân được viết bằng HTML, CSS, JS Vanilla. Triển khai trên Vercel, Code lưu trữ ở Github.",
+    "githubUrl": "https://github.com/khanhecb/portfolio",
+    "siteUrl": "https://khanhecb.vercel.app/",
+    "platforms": [
+      "HTML"
+    ],
+    "technologies": [
+      "Vercel",
+      "Git/Github"
     ]
   },
   {
-    "year": "2026",
-    "name": "KhanhECB Portfolio",
-    "url": "",
-    "github": "https://github.com/khanhecb/portfolio",
-    "tags": [
-        "HTML & CSS",
-        "JS Vanilla",
-        "Vercel"
+    "date": "2/2026",
+    "title": "Cpap - Bpharm",
+    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và Custom các tính năng đặc biệt.",
+    "githubUrl": "",
+    "siteUrl": "https://cpap.com/",
+    "platforms": [
+      "WordPress",
+      "E-Commerce"
+    ],
+    "technologies": [
+      "Flatsome",
+      "Woocommerce",
+      "PHP",
+      "Redis"
     ]
   },
   {
-    "year": "2026",
-    "name": "GuangNa Furniture",
-    "url": "https://guangnafurniture.com",
-    "github": "",
-    "tags": [
-        "WordPress",
-        "Flatsome",
-        "Woocommerce",
-        "HTML & CSS",
-        "PHP"
+    "date": "6/2026",
+    "title": "Guangna Furniture",
+    "description": "Tôi có vai trò là từ các thông tin yêu cầu của khách hàng ban đầu tôi làm việc cùng Design để tạo ra UI như trên, đề xuất và kéo thả các Layout còn thiếu. Import sản phẩm và ẩn đi thông tin liên quan đến bán hàng, vì đây chỉ dùng để trưng bày.",
+    "githubUrl": "",
+    "siteUrl": "https://guangnafurniture.com/",
+    "platforms": [
+      "WordPress",
+      "Furniture"
+    ],
+    "technologies": [
+      "FlatSome",
+      "PHP",
+      "Woocommerce"
     ]
   },
   {
-    "year": "2026",
-    "name": "CPAP - Bpharm",
-    "url": "https://cpap.com.vn",
-    "github": "",
-    "tags": [
-        "WordPress",
-        "Flatsome",
-        "Woocommerce",
-        "Cloudflare",
-        "HTML  CSS  JS",
-        "Redis"
+    "date": "7/2026",
+    "title": "Danh Ca Minh Cảnh",
+    "description": "Đây là dự án tập trung vào bán vé và tự động hóa việc bán vé và thanh toán. Vấn đề tôi phải giải quyết là dùng Python để kết với REST API để xử lý các việc Plugin chưa làm tốt và kết nối với Google Console để xử lý Google Sheet để cho mọi người quản lý.",
+    "githubUrl": "https://github.com/khanhecb/danhcaminhcanh",
+    "siteUrl": "https://danhcaminhcanh.com",
+    "platforms": [
+      "WordPress",
+      "E-Commerce"
+    ],
+    "technologies": [
+      "Python",
+      "Woocommerce",
+      "Gutenbern",
+      "Sepay"
     ]
   },
   {
-    "year": "2026",
-    "name": "Trutech",
-    "url": "https://trutech-mfg.com.vn/",
-    "github": "",
-    "tags": [
-        "WordPress",
-        "Ainexa",
-        "Elementor",
-        "HTML CSS JS",
-        "Light/Dark Mode"
+    "date": "5/2026",
+    "title": "Trutech Mfg",
+    "description": "Dự án yêu cầu chỉ làm UI và bàn giao lại Source Code và Database cho bên khách hàng, vì họ có BackEnd Dev để quản trị. Vai trò của tôi là cài đặt theme import data theme, lấy nội dung từ Web cũ qua, tích hợp chức năng Light/Dark Mode bằng CSS, và làm một số hiệu ứng theo yêu cầu",
+    "githubUrl": "",
+    "siteUrl": "https://trutech-mfg.com.vn/",
+    "platforms": [
+      "WordPress",
+      "Brand"
+    ],
+    "technologies": [
+      "PHP",
+      "Elementor",
+      "Woocommerce",
+      "HTML/CSS"
     ]
   },
   {
-    "year": "2026",
-    "name": "Danh Ca Minh Cảnh",
-    "url": "https://danhcaminhcanh.com",
-    "github": "https://github.com/khanhecb/danhcaminhcanh",
-    "tags": [
-        "WordPress",
-        "Woocommerce",
-        "Gutenberg",
-        "Sepay",
-        "Python",
-        "GG Sheet",
-        "Telegram"
+    "date": "2025",
+    "title": "Cricket Fashion",
+    "description": "Trong Project này nhiệm vụ của tôi là cài đặt Theme The7, import data, setting Elementor toàn cục, kéo thả Layout Header/ Footer theo đúng yêu cầu",
+    "githubUrl": "",
+    "siteUrl": "https://cricketfashion.com",
+    "platforms": [
+      "WordPress",
+      "E-Commerce"
+    ],
+    "technologies": [
+      "Elementor",
+      "Woocommerce",
+      "Theme The7"
     ]
   },
   {
-    "year": "2026",
-    "name": "LandingPage mua vé",
-    "url": "https://intwomencelebration.org/ticker-2026/",
-    "github": "",
-    "tags": [
-        "WordPress",
-        "Paypal",
-        "Forminator"
-    ]
-  },
-  {
-    "year": "2025",
-    "name": "Cricket Fashion",
-    "url": "https://cricketfashion.vn/",
-    "github": "",
-    "tags": [
-        "WordPress",
-        "Theme The7",
-        "Elementor",
-        "Woocommerce"
-    ]
-  },
-  {
-    "year": "2025",
-    "name": "Form đăng ký khám bệnh",
-    "github": "",
-    "url": "https://sleepfi.vn/",
-    "tags": [
-        "WordPress",
-        "Forminator",
-        "GG Sheet Script",
-        "Email SMTP",
-        "PHP"
+    "title": "Sleepfi",
+    "description": "Website này tôi có vai trò bảo trì nó, tôi tạo thêm Form để người dùng đặt lịch khám bệnh và chọn bác sĩ. <br> Website bị chạy chậm, không",
+    "githubUrl": "",
+    "siteUrl": "https://sleepfi.vn",
+    "platforms": [
+      "WordPress"
+    ],
+    "technologies": [
+      "Google Sheet",
+      "Forminator",
+      "Optimize Web"
     ]
   }
 ]

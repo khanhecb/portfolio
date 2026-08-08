@@ -1,0 +1,103 @@
+/* TEST */
+/* Bao phủ toàn màn hình */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-base); /* Màu nền tối */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Hiệu ứng fade out */
+}
+
+#preloader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Container của Loader (Hình vuông) */
+.loader-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Có thể thêm border mờ nền ở đây nếu muốn */
+    /* border: 2px solid rgba(255, 255, 255, 0.1); */
+}
+
+/* Số phần trăm ở giữa */
+#counter {
+    font-family: 'Courier New', Courier, monospace; /* Font mono cho đẹp */
+    font-size: 2rem;
+    color: #00bcd4; /* Màu số */
+    font-weight: bold;
+}
+
+/* Định dạng chung cho các đường border */
+.border-line {
+    position: absolute;
+    background-color: var(--color-accent); /* Màu border */
+    /* Độ dày border */
+}
+
+/* Cấu hình thời gian và kiểu animation tổng thể */
+.border-line {
+    animation-duration: 0.75s; /* Mỗi cạnh chạy trong 0.75s */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; /* Giữ nguyên trạng thái cuối */
+}
+
+/* --- Keyframes & Vị trí cho từng cạnh --- */
+
+/* Cạnh trên: Chạy từ trái sang phải */
+.top {
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    animation-name: draw-top;
+}
+
+/* Cạnh phải: Chạy từ trên xuống dưới (delay sau cạnh trên) */
+.right {
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 0;
+    animation-name: draw-right;
+    animation-delay: 0.75s;
+}
+
+/* Cạnh dưới: Chạy từ phải sang trái (delay sau cạnh phải) */
+.bottom {
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    animation-name: draw-bottom;
+    animation-delay: 1.5s;
+}
+
+/* Cạnh trái: Chạy từ dưới lên trên (delay sau cạnh dưới) */
+.left {
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    animation-name: draw-left;
+    animation-delay: 2.25s; /* Tổng delay + duration = 3s */
+}
+
+/* Định nghĩa hiệu ứng vẽ */
+@keyframes draw-top { to { width: 100%; } }
+@keyframes draw-right { to { height: 100%; } }
+@keyframes draw-bottom { to { width: 100%; } }
+@keyframes draw-left { to { height: 100%; } }

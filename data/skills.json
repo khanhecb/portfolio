@@ -1,48 +1,105 @@
-[
-  {
-    "title": "Quản trị hệ thống",
-    "tags": [
-      "Cpanel",
-      "DirectAdmin",
-      "SSH",
-      "FTP",
-      "Bash",
-      "WP-CLI",
-      "DNS",
-      "Web Mail"
-    ]
-  },
-  {
-    "title": "WordPress UI",
-    "tags": [
-      "Flatsome (UX Builder)",
-      "Elementor",
-      "Gutenbern",
-      "HTML & CSS",
-      "JS"
-    ]
-  },
-  {
-    "title": "WordPress Backend",
-    "tags": [
-      "WP Hook",
-      "Woocommerce REST",
-      "WP Query",
-      "PHP",
-      "SMTP",
-      "Sepay",
-      "Paypal",
-      "Seat Planner"
-    ]
-  },
-  {
-    "title": "Automation",
-    "tags": [
-      "Python",
-      "WPScan",
-      "Telegram API",
-      "Google Sheet API",
-      "TEST"
-    ]
-  }
-]
+{
+  "title": "Công nghệ sử dụng",
+  "skills": [
+    {
+      "name": "HTML5",
+      "iconClass": "devicon-html5-plain",
+      "slug": "html"
+    },
+    {
+      "name": "CSS3",
+      "iconClass": "devicon-css3-plain",
+      "slug": "css"
+    },
+    {
+      "name": "JavaScript",
+      "iconClass": "devicon-javascript-plain",
+      "slug": "js"
+    },
+    {
+      "name": "PHP",
+      "iconClass": "devicon-php-plain",
+      "slug": "php"
+    },
+    {
+      "name": "Python",
+      "iconClass": "devicon-python-plain",
+      "slug": "python"
+    },
+    {
+      "name": "Bash",
+      "iconClass": "devicon-bash-plain",
+      "slug": "bash"
+    },
+    {
+      "name": "WordPress",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "WP Scan",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "WordPress DB",
+      "iconClass": "devicon-mysql-plain",
+      "slug": "mysql"
+    },
+    {
+      "name": "Flatsome",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "Elementor",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "Elementor",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "Git",
+      "iconClass": "devicon-git-plain",
+      "slug": "git"
+    },
+    {
+      "name": "cPanel",
+      "iconClass": "devicon-cpanel-original",
+      "slug": "cpanel"
+    },
+    {
+      "name": "Linux",
+      "iconClass": "devicon-linux-plain",
+      "slug": "linux"
+    },
+    {
+      "name": "Redis",
+      "iconClass": "devicon-redis-plain",
+      "slug": "redis"
+    },
+    {
+      "name" : "Github",
+      "iconClass": "devicon-github-original",
+      "slug": "github"
+    },
+    {
+      "name" : "FTP",
+      "iconClass": "devicon-filezilla-plain",
+      "slug": "filezilla"
+    },
+    {
+      "name" : "Woocommerce",
+      "iconClass": "devicon-woocommerce-plain",
+      "slug": "woocommerce"
+    },
+    {
+      "name" : "SSH",
+      "iconClass": "devicon-ssh-original-wordmark",
+      "slug": "ssh"
+    }
+  ]
+}
