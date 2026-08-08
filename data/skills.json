@@ -37,7 +37,17 @@
       "slug": "wp"
     },
     {
+      "name" : "Woocommerce",
+      "iconClass": "devicon-woocommerce-plain",
+      "slug": "woocommerce"
+    },
+    {
       "name": "WP Scan",
+      "iconClass": "devicon-wordpress-plain",
+      "slug": "wp"
+    },
+    {
+      "name": "WP CLI",
       "iconClass": "devicon-wordpress-plain",
       "slug": "wp"
     },
@@ -57,7 +67,7 @@
       "slug": "wp"
     },
     {
-      "name": "Elementor",
+      "name": "Gutenbern",
       "iconClass": "devicon-wordpress-plain",
       "slug": "wp"
     },
@@ -67,9 +77,9 @@
       "slug": "git"
     },
     {
-      "name": "cPanel",
-      "iconClass": "devicon-cpanel-original",
-      "slug": "cpanel"
+      "name" : "Github",
+      "iconClass": "devicon-github-original",
+      "slug": "github"
     },
     {
       "name": "Linux",
@@ -77,14 +87,19 @@
       "slug": "linux"
     },
     {
+      "name": "cPanel",
+      "iconClass": "devicon-cpanel-original",
+      "slug": "cpanel"
+    },
+    {
       "name": "Redis",
       "iconClass": "devicon-redis-plain",
       "slug": "redis"
     },
     {
-      "name" : "Github",
-      "iconClass": "devicon-github-original",
-      "slug": "github"
+      "name" : "SSH",
+      "iconClass": "devicon-ssh-original-wordmark",
+      "slug": "ssh"
     },
     {
       "name" : "FTP",
@@ -92,14 +107,14 @@
       "slug": "filezilla"
     },
     {
-      "name" : "Woocommerce",
-      "iconClass": "devicon-woocommerce-plain",
-      "slug": "woocommerce"
+      "name" : "Vercel",
+      "iconClass": "devicon-vercel-original",
+      "slug": "vercel"
     },
     {
-      "name" : "SSH",
-      "iconClass": "devicon-ssh-original-wordmark",
-      "slug": "ssh"
+      "name" : "Cloud Flare",
+      "iconClass": "devicon-cloudflare-plain",
+      "slug": "cloudflare"
     }
   ]
 }

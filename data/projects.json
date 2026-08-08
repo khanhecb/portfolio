@@ -6,17 +6,18 @@
     "githubUrl": "https://github.com/khanhecb/portfolio",
     "siteUrl": "https://khanhecb.vercel.app/",
     "platforms": [
-      "HTML"
+      "Landing Page"
     ],
     "technologies": [
-      "Vercel",
-      "Git/Github"
+      "HTML/CSS",
+      "JS Vanilla",
+      "Vercel"
     ]
   },
   {
     "date": "2/2026",
     "title": "Cpap - Bpharm",
-    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và Custom các tính năng đặc biệt.",
+    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và có so sánh sản phẩm, thêm vào wishlist, kết nối Redis Object Cache để tăng tốc độ xử lý",
     "githubUrl": "",
     "siteUrl": "https://cpap.com/",
     "platforms": [
@@ -41,9 +42,10 @@
       "Furniture"
     ],
     "technologies": [
-      "FlatSome",
+      "Flatsome",
       "PHP",
-      "Woocommerce"
+      "Woocommerce",
+      "Cloud Flare"
     ]
   },
   {
@@ -74,10 +76,9 @@
       "Brand"
     ],
     "technologies": [
-      "PHP",
-      "Elementor",
-      "Woocommerce",
-      "HTML/CSS"
+      "HTML/CSS",
+      "JS",
+      "Elementor"
     ]
   },
   {
@@ -91,9 +92,9 @@
       "E-Commerce"
     ],
     "technologies": [
+      "The7",
       "Elementor",
-      "Woocommerce",
-      "Theme The7"
+      "Woocommerce"
     ]
   },
   {
