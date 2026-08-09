@@ -44,6 +44,8 @@
     --container-width-medium: 1280px;
     --container-width-full: 100%;
 
+    /* Breakpoint */
+    --tablet-breakpoint: 1024px;
 }
 
 * {
