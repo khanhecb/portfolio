@@ -36,7 +36,7 @@
     height: 160px;
     background: var(--color-base-hover);
     border: 1px solid var(--border-color);
-    box-shadow: 0 0 30px var(--accent-glow);
+    box-shadow: 0 0 30px var(--color-accent-glow);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,14 +79,14 @@
     font-size: var(--font-size-very-large);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
-    text-shadow: 0 0 15px var(--accent-glow);
+    text-shadow: 0 0 15px var(--color-accent-glow);
 }
 
 .loader-status {
     margin-top: var(--spacing-md);
     font-family: 'Consolas', monospace;
     font-size: var(--font-size-smaller);
-    color: var(--text-secondary);
+    color: var(--text-color-secondary);
     letter-spacing: 2px;
     text-transform: uppercase;
 }

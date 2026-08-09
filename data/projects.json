@@ -19,7 +19,7 @@
     "title": "Cpap - Bpharm",
     "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và có so sánh sản phẩm, thêm vào wishlist, kết nối Redis Object Cache để tăng tốc độ xử lý",
     "githubUrl": "",
-    "siteUrl": "https://cpap.com/",
+    "siteUrl": "https://cpap.com.vn/",
     "platforms": [
       "WordPress",
       "E-Commerce"

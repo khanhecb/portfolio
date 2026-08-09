@@ -1,4 +1,4 @@
-(function initCyberLaserPreloader(minDuration = 3200) {
+(function initCyberLaserPreloader(minDuration = 1200) {
 
     if (!document.getElementById('preloader')) {
         const html = `
@@ -58,6 +58,6 @@
         setTimeout(finish, remaining);
     } else {
         window.addEventListener('load', () => setTimeout(finish, remaining), { once: true });
-        setTimeout(finish, minDuration + 2000);
+        setTimeout(finish, minDuration + 750);
     }
 })();

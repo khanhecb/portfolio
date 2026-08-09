@@ -112,7 +112,7 @@
       "slug": "vercel"
     },
     {
-      "name" : "Cloud Flare",
+      "name" : "CloudFlare",
       "iconClass": "devicon-cloudflare-plain",
       "slug": "cloudflare"
     }

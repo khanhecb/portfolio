@@ -1,0 +1,19 @@
+/* Typo base */
+h1, h2, h3, h4, h5, h6 { font-weight: var(--font-weight-bold); }
+
+h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+h3 { font-size: clamp(1.3rem, 3vw, 1.8rem); }
+h4 { font-size: clamp(1.15rem, 2.5vw, 1.6rem); }
+h5 { font-size: clamp(1.05rem, 2vw, 1.5rem); }
+h6 { font-size: clamp(1rem, 1.5vw, 1.2rem); }
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.font-size-small { font-size: 1em;}
+.font-size-medium {font-size: 1.5em}
+.font-size-large {font-size: 2em}
+.font-size-very-large {font-size: 2.5em}

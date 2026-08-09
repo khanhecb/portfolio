@@ -1,0 +1,13 @@
+#about p {
+    text-align: justify;
+}
+
+.portfolio-name {
+    font-size: 4em;
+    margin: 0;
+}
+
+section#about{
+    padding: 24px 0;
+    margin: 120px 0;
+}

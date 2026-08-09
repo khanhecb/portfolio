@@ -1,0 +1,61 @@
+:root {
+    /* color */
+    --color-base: #0f172a;
+    --color-base-hover: #1e293b;
+    --color-footer: black;
+    --color-primary: #00e5ff;
+    --color-primary-hover: #5eead410;
+    --color-accent: #fdfdfd;
+    --color-accent-glow: rgba(45, 212, 191, 0.15);
+    --border-color: #334155;
+
+    --color-secondary: #fff;
+    --color-secondary-hover: #ffffff40;
+    --text-color-primary: #f8fafc;
+
+    --text-color-secondary: #94a3b8;
+    --text-color-accent: #2dd4bf;
+
+    /* Font */
+    --font-heading: "Inter", sans-serif;
+    --font-body: "Roboto", sans-serif;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-size-base: 16px;
+    --font-size-large: 1.5em;
+    --font-size-very-large: 2em;
+    --font-size-medium: 1.25em;
+    --font-size-small: 0.9em;
+    --font-size-smaller: 0.8em;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+
+    /* Border radius */
+    --border-radius-circle: 100px;
+
+    /* Container    */
+    --container-width-narrow: 960px;
+    --container-width-medium: 1280px;
+    --container-width-full: 100%;
+
+    /* Breakpoint */
+    --tablet-breakpoint: 1024px;
+}
+
+
+@media  screen and (max-width: 768px) {
+    :root {
+        /* Spacing */
+        --spacing-xs: 4px;
+        --spacing-sm: 6px;
+        --spacing-md: 8px;
+        --spacing-lg: 10px;
+        --spacing-xl: 12px;
+    }
+}

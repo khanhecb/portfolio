@@ -1,0 +1,33 @@
+.text-left {
+    text-align: left;
+}
+
+.text-color-primary {
+    color: var(--text-color-primary);
+}
+
+.text-color-second {
+    color: var(--text-color-secondary);
+}
+
+.text-color-accent {
+    color: var(--color-primary)
+}
+
+.text-strong {
+    font-weight: bold;
+}
+
+.text-highlight {
+    color: var(--color-primary);
+}
+
+.kicker {
+    text-transform: uppercase;
+}
+
+.title {
+    color: var(--text-color-primary);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+}
