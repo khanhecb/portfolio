@@ -52,7 +52,7 @@
       "slug": "wp"
     },
     {
-      "name": "WordPress DB",
+      "name": "WP DB",
       "iconClass": "devicon-mysql-plain",
       "slug": "mysql"
     },

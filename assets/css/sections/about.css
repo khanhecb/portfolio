@@ -1,13 +1,29 @@
+#about {
+    max-height: 100%;
+}
 #about p {
     text-align: justify;
 }
 
+.about-container {
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+}
+
 .portfolio-name {
-    font-size: 4em;
+    font-size: clamp(1.8rem, 4vw, 4rem);
     margin: 0;
 }
 
 section#about{
     padding: 24px 0;
     margin: 120px 0;
+}
+
+h5.portfolio-description-subtitle {
+    font-size: clamp(1rem, 1vw, 2rem);
+    margin: 0;
 }
