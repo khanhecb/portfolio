@@ -209,7 +209,6 @@ async function initApp() {
     renderSectionProject();
     renderSectionSkills();
 
-
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', animationScrollHeader);
     } else {

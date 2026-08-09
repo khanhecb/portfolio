@@ -1,4 +1,3 @@
-
 #preloader {
     position: fixed;
     top: 0;
@@ -42,11 +41,25 @@
     box-shadow: 0 0 12px var(--color-primary), 0 0 20px var(--color-primary);
 }
 
-.laser-top { top: 0; left: -100%; width: 100%; height: 2px; animation: laser-h ${minDuration/2}ms linear infinite; }
-.laser-bottom { bottom: 0; right: -100%; width: 100%; height: 2px; animation: laser-h-rev ${minDuration/2}ms linear infinite; }
-.laser-left { bottom: -100%; left: 0; width: 2px; height: 100%; animation: laser-v ${minDuration/2}ms linear infinite; }
-.laser-right { top: -100%; right: 0; width: 2px; height: 100%; animation: laser-v-rev ${minDuration/2}ms linear infinite; }
+/* Lưu ý: Thời gian 1.6s ở đây tương đương minDuration / 2 */
+.laser-top {
+    top: 0; left: -100%; width: 100%; height: 2px;
+    animation: laser-h 1.6s linear infinite;
+}
+.laser-bottom {
+    bottom: 0; right: -100%; width: 100%; height: 2px;
+    animation: laser-h-rev 1.6s linear infinite;
+}
+.laser-left {
+    bottom: -100%; left: 0; width: 2px; height: 100%;
+    animation: laser-v 1.6s linear infinite;
+}
+.laser-right {
+    top: -100%; right: 0; width: 2px; height: 100%;
+    animation: laser-v-rev 1.6s linear infinite;
+}
 
+/* Định nghĩa chuyển động 4 cạnh */
 @keyframes laser-h { 0% { left: -100%; } 100% { left: 100%; } }
 @keyframes laser-h-rev { 0% { right: -100%; } 100% { right: 100%; } }
 @keyframes laser-v { 0% { bottom: -100%; } 100% { bottom: 100%; } }
@@ -68,4 +81,3 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-    

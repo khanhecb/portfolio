@@ -2,8 +2,8 @@
     /* Dark */
     --color-base: #0f172a;
     --color-base-hover: #1e293b;
-    --color-footer: dark-grey;
-    --color-primary: #2dd4bf;
+    --color-footer: black;
+    --color-primary: #00e5ff;
     --color-primary-hover: #5eead410;
     --color-accent: #fdfdfd;
     --color-secondary: #fff;
@@ -23,6 +23,11 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-size-base: 16px;
+    --font-size-large: 1.5em;
+    --font-size-very-large: 2em;
+    --font-size-medium: 1.25em;
+    --font-size-small: 0.9em;
+    --font-size-smaller: 0.8em;
 
     /* Spacing */
     --spacing-xs: 4px;
@@ -181,7 +186,7 @@ section {
 /* Layout - Containers */
 .container--narrow  {width:  var(--container-width-medium); max-width: 100%;}
 .container--medium  {width:  var(--container-width-medium); max-width: 100%;}
-.container--full    {wdith:  var(--container-width-full);   max-width: 100%;}
+.container--full    {width:  var(--container-width-full);   max-width: 100%;}
 
 /* Button */
 .button {
@@ -210,11 +215,6 @@ section {
     transition: all 0.2s ease-in-out;
     transform: translateY(-5px) translateX(-4px);
     color: var(--color-primary);
-}
-
-.button-contact {
-    border: solid 1px #97fff3;
-
 }
 
 .text-highlight {
@@ -335,7 +335,6 @@ section {
 /* Header */
 
 #header {
-    font-family: var(--font-heading);
     width: 100%;
     background: var(--color-base-hover);
     padding: var(--spacing-md) var(--spacing-xl);

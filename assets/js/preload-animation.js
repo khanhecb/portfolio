@@ -1,6 +1,5 @@
 (function initCyberLaserPreloader(minDuration = 3200) {
 
-    // Chèn HTML vào body nếu chưa có
     if (!document.getElementById('preloader')) {
         const html = `
         <div id="preloader">
