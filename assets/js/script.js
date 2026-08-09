@@ -154,7 +154,7 @@ async function renderSectionProject(dataFile = './data/projects.json', container
     // 5. Bọc toàn bộ các <li> vào <ul> duy nhất
     container.innerHTML = `
             <div class="projects-container">
-                <h2>Projects</h2>
+                <h2 class="projects-title">Projects</h2>
                 <ul class="projects-list">
                     ${projectItemsHTML}
                 </ul>
@@ -196,7 +196,7 @@ async function renderSectionSkills(containerId = 'skills', jsonUrl = '/data/skil
     // Render HTML
     container.innerHTML = `
       <div class="skills-grid-container">
-        <h2>${data.title}</h2>
+        <h2 class="skills-title">${data.title}</h2>
         <div class="skills-icon-grid">
           ${skillsHTML}
         </div>

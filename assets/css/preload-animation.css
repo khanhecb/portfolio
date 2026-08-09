@@ -10,15 +10,24 @@
     justify-content: center;
     align-items: center;
     z-index: 99999;
+
+    /* Trạng thái hiển thị ban đầu */
     opacity: 1;
     visibility: visible;
-    transition: transform 0.8s cubic-bezier(0.85, 0, 0.15, 1), opacity 0.6s ease;
+    pointer-events: auto;
+
+    /* Chuyển động mờ dần mượt mà */
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Trạng thái khi kết thúc preloader */
 #preloader.hidden {
     opacity: 0;
-    transform: scale(1.2);
     visibility: hidden;
+    pointer-events: none; /* Tránh click trúng preloader khi đang mờ dần */
+    transform: scale(1.08); /* Phóng nhẹ 8% tạo hiệu ứng xé/chui vào trang */
 }
 
 .loader-box {

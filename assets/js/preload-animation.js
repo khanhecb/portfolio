@@ -46,8 +46,9 @@
 
         setTimeout(() => {
             preloader.classList.add('hidden');
-            setTimeout(() => preloader?.remove(), 800);
-        }, 200);
+
+            setTimeout(() => preloader?.remove(), 1000);
+        }, 400);
     }
 
     const elapsed = Date.now() - startTime;
