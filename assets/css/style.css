@@ -2,6 +2,7 @@
     /* Dark */
     --color-base: #0f172a;
     --color-base-hover: #1e293b;
+    --color-footer: dark-grey;
     --color-primary: #2dd4bf;
     --color-primary-hover: #5eead410;
     --color-accent: #fdfdfd;
@@ -32,6 +33,12 @@
 
     /* Border radius */
     --border-radius-circle: 100px;
+
+    /* Container    */
+    --container-width-narrow: 960px;
+    --container-width-medium: 1280px;
+    --container-width-full: 100%;
+
 }
 
 * {
@@ -172,9 +179,9 @@ section {
 .margin-0 { margin: 0; }
 
 /* Layout - Containers */
-.container--narrow  {width: 1200px; max-width: 100%;}
-.container--medium  {max-width: 1440px;}
-.container--full    {max-width: 100%;}
+.container--narrow  {width:  var(--container-width-medium); max-width: 100%;}
+.container--medium  {width:  var(--container-width-medium); max-width: 100%;}
+.container--full    {wdith:  var(--container-width-full);   max-width: 100%;}
 
 /* Button */
 .button {

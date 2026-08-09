@@ -13,46 +13,6 @@ async function loadIncludes() {
     }
 }
 
-async function renderExpSection( dataFile = './data/exp.json', containerLayoutId = 'exp') {
-
-    // Get Json data
-    const response = await fetch( dataFile )
-
-    if ( !response.ok ) {
-        console.warn(`File data ${dataFile} not found` );
-        return 
-    }
-
-    const expJson = await response.json();
-
-    // Check container ID is exist
-    const container = document.getElementById( containerLayoutId );
-
-    if ( !container ) {
-        console.warn(`Error: Container ID ${ containerLayoutId } not found `);
-        return
-    }
-
-    // Render HTML
-    const containerItems = expJson.map(( {date, title, description }) => {
-        return `
-            <div class="timeline-item">
-                <div class="timeline-node"></div>
-                <div class="timeline-card">
-                    <div class="timeline-meta">
-                        <span class="timeline-year">${date}</span>
-                    </div>
-                    <h3 class="timeline-title">${title}</h3>
-                    <h4 class="desc">${description}</h3>
-                </div>
-            </div>
-        `
-    }).join('');
-
-    container.innerHTML = `<div class="tech-timeline">${containerItems}</div>`
-
-}
-
 function animationScrollHeader() {
     const header = document.getElementById('header');
     if (!header) return;
@@ -75,15 +35,13 @@ function animationScrollHeader() {
         // Thêm hiệu ứng shadow khi cuộn xuống xa đỉnh trang
         header.classList.add('header-scrolled');
 
-        // 2. Kiểm tra khoảng cách cuộn vượt threshold mới xử lý
+        // Kiểm tra khoảng cách cuộn vượt threshold mới xử lý
         const scrollDifference = Math.abs(currentScrollY - lastScrollY);
 
         if (scrollDifference > scrollThreshold) {
             if (currentScrollY > lastScrollY) {
-                // Kéo xuống -> Ẩn Header
                 header.classList.add('header-hidden');
             } else {
-                // Kéo lên -> Hiện Header
                 header.classList.remove('header-hidden');
             }
             lastScrollY = currentScrollY;
@@ -102,7 +60,7 @@ function animationScrollHeader() {
 }
 
 
-async function renderProjectSection(dataFile = './data/projects.json', containerId = 'projects') {
+async function renderSectionProject(dataFile = './data/projects.json', containerId = 'projects') {
     // Check DoOM Container
     const container = document.getElementById(containerId);
     if (!container) {
@@ -196,6 +154,7 @@ async function renderProjectSection(dataFile = './data/projects.json', container
     // 5. Bọc toàn bộ các <li> vào <ul> duy nhất
     container.innerHTML = `
             <div class="projects-container">
+                <h2>Projects</h2>
                 <ul class="projects-list">
                     ${projectItemsHTML}
                 </ul>
@@ -203,50 +162,52 @@ async function renderProjectSection(dataFile = './data/projects.json', container
         `;
 }
 
-
-async function loadAndRenderSkills(containerId = 'skills', jsonUrl = '/data/skills.json') {
+/**
+ * Render phần HTML hiển thị các kỹ năng (Section Skills) từ dữ liệu JSON.
+ *
+ * @async
+ * @param {string} [containerId='skills'] - ID của element container trong HTML.
+ * @param {string} [jsonUrl='/data/skills.json'] - Đường dẫn đến file JSON chứa dữ liệu skills.
+ * @returns {Promise<void>} Không trả về giá trị, chỉ cập nhật DOM.
+ * @throws {Error} Quăng ra lỗi nếu việc fetch dữ liệu không thành công (HTTP response status status !ok).
+ */
+async function renderSectionSkills(containerId = 'skills', jsonUrl = '/data/skills.json') {
     const container = document.getElementById(containerId);
     if (!container) return;
 
-    try {
-        // 1. Chờ lấy dữ liệu từ file JSON
-        const response = await fetch(jsonUrl);
-        if (!response.ok) {
-            throw new Error(`Lỗi HTTP! Trạng thái: ${response.status}`);
-        }
+    // Get JSON data
+    const response = await fetch(jsonUrl);
+    if (!response.ok) {
+        throw new Error(`Status Error! Status: ${response.status}`);
+    }
 
-        // 2. Chờ parse dữ liệu JSON
-        const data = await response.json();
+    // Wait JSON data
+    const data = await response.json();
 
-        // 3. Tạo chuỗi HTML cho danh sách kỹ năng
-        const skillsHTML = data.skills
-            .map(skill => `
-        <div class="skill-grid-item ${skill.slug}">
-          <i class="${skill.iconClass}"></i>
-          <span>${skill.name}</span>
-        </div>
-      `)
-            .join('');
+    // Render
+    const skillsHTML = data.skills.map(skill => `
+                <div class="skill-grid-item ${skill.slug}">
+                  <i class="${skill.iconClass}"></i>
+                  <span>${skill.name}</span>
+                </div>
+              `)
+        .join('');
 
-        // 4. Render toàn bộ cấu trúc vào container
-        container.innerHTML = `
+    // Render HTML
+    container.innerHTML = `
       <div class="skills-grid-container">
-        <h3 class="grid-title">${data.title}</h3>
+        <h2>${data.title}</h2>
         <div class="skills-icon-grid">
           ${skillsHTML}
         </div>
       </div>
     `;
-
-    } catch (error) {
-        console.error('Không thể tải dữ liệu kỹ năng:', error);
-    }
 }
 
 async function initApp() {
     await loadIncludes();
-    renderProjectSection();
-    loadAndRenderSkills();
+    renderSectionProject();
+    renderSectionSkills();
 
 
     if (document.readyState === 'loading') {
