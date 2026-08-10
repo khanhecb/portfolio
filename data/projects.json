@@ -6,7 +6,7 @@
     "githubUrl": "https://github.com/khanhecb/portfolio",
     "siteUrl": "https://khanhecb.vercel.app/",
     "platforms": [
-      "8/2026",
+      "2026",
       "LandingPage"
     ],
     "technologies": [
@@ -18,11 +18,11 @@
   {
     "date": "7/2026",
     "title": "Danh Ca Minh Cảnh",
-    "description": "Đây là dự án tập trung vào bán vé và tự động hóa việc bán vé và thanh toán. Vấn đề tôi phải giải quyết là dùng Python để kết với REST API để xử lý các việc Plugin chưa làm tốt và kết nối với Google Console để xử lý Google Sheet để cho mọi người quản lý.",
+    "description": "Là ứng dụng Web dùng giúp người dùng chọn ghế, mua ghế và thanh toán. Về mặt vận hành và quản lý vé bán thì hệ thống sử dụng Admin của WordPress kết hợp với Google Sheet để xem thống kê nhanh có tích hợp Telemgram để gửi thông báo đến nhóm. Trong dự án này tôi nhảm nhiệm vai trò thiết kế giao diện, build sơ đồ rạp hát, viết plugin bằng PHP để tùy chỉnh hệ thống, dùng Python kết nối với REST API của Woocommerce để đưa dữ liệu lên Google Sheet và tự động hóa kiểm tra vé không hợp lệ. Cấu hình Sepay kết nối với Website để thanh toán, deploy lên Hosting, cấu hình DNS.",
     "githubUrl": "https://github.com/khanhecb/danhcaminhcanh",
     "siteUrl": "https://danhcaminhcanh.com",
     "platforms": [
-      "7/2026",
+      "2026",
       "WordPress"
     ],
     "technologies": [
@@ -35,11 +35,11 @@
   {
     "date": "6/2026",
     "title": "Guangna Furniture",
-    "description": "Tôi có vai trò là từ các thông tin yêu cầu của khách hàng ban đầu tôi làm việc cùng Design để tạo ra UI như trên, đề xuất và kéo thả các Layout còn thiếu. Import sản phẩm và ẩn đi thông tin liên quan đến bán hàng, vì đây chỉ dùng để trưng bày.",
+    "description": "Đây là dự án của người Trung làm bằng ngôn ngữ tiếng Anh tập trung vào trình bày sản phẩm trong lĩnh vực nội thất. Trong dự án này tôi có vai trò làm việc trực tiếp với Sale/Design để làm rõ yêu cầu, tạo UI/UX theo yêu cầu, ẩn hiển thị Woocommerce liên quan đến giá, thêm Field của ACF để chuẩn hóa cho Admin nhập liệu và hiển thị ra Frontend (Kích thước), cấu hình CloudFlare cho site, cấu hình .htaccess để chặn Directory Listing, deploy, hổ trợ phân loại và import sản phẩm dựa trên dữ assets khách hàng gửi.",
     "githubUrl": "",
     "siteUrl": "https://guangnafurniture.com/",
     "platforms": [
-      "6/2026",
+      "2026",
       "WordPress",
       "Furniture"
     ],
@@ -51,13 +51,13 @@
     ]
   },
   {
-    "date": "5/2026",
+    "date": "2026",
     "title": "Trutech Mfg",
-    "description": "Dự án yêu cầu chỉ làm UI và bàn giao lại Source Code và Database cho bên khách hàng, vì họ có BackEnd Dev để quản trị. Vai trò của tôi là cài đặt theme import data theme, lấy nội dung từ Web cũ qua, tích hợp chức năng Light/Dark Mode bằng CSS, và làm một số hiệu ứng theo yêu cầu",
+    "description": "Đây là dự án nhận diện thương hiệu của một công ty trong lĩnh vực in 3D, trách nhiệm của team tôi là xây dựng UI/UX, lấy dữ liệu bài viết từ Website cũ, nhúng API Front-End, làm Light/Dark Mode và bàn giao lại cho Dev của công ty khách. Tôi có nhiệm vụ làm việc, nhận Feedback trực tiếp từ khách hàng, chỉnh sửa theo yêu cầu và bàn giao Source code và Database cho Dev khách.",
     "githubUrl": "",
     "siteUrl": "https://trutech-mfg.com.vn/",
     "platforms": [
-      "5/2026",
+      "2026",
       "WordPress",
       "Brand"
     ],
@@ -70,11 +70,11 @@
   {
     "date": "2/2026",
     "title": "Cpap - Bpharm",
-    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và có so sánh sản phẩm, thêm vào wishlist, kết nối Redis Object Cache để tăng tốc độ xử lý",
+    "description": "Đây là dự án E-Commerce sử dụng Flatsome làm Page Builder theo giao diện mẫu do khách chọn và có thêm vài tính năng tùy chỉnh như wishlist, so sánh sản phẩm, style lại sale bage; yêu cầu website phải load nhanh và chịu tải được nhiều sản phẩm. Trong dự án này tôi làm việc với Content Marketing của công ty khách hàng, xây dựng UI/UX theo yêu cầu, viết Plugin để tùy biến tính năng và hiển thị; kết nối Redis Object Cache để giảm tải Database, deploy và trình bày giải quyết các yêu cầu chưa thống nhất giữa yêu cầu của khách hàng và tính năng của công cụ.",
     "githubUrl": "",
     "siteUrl": "https://cpap.com.vn/",
     "platforms": [
-      "4/2026",
+      "2026",
       "WordPress",
       "E-Commerce"
     ],
@@ -83,6 +83,36 @@
       "Woocommerce",
       "PHP",
       "Redis"
+    ]
+  },
+  {
+    "date": "2/2026 ( Mùng 4 tết )",
+    "title": "Tra cứu bàn tiệc",
+    "description": "Khách hàng cần một giải pháp nhanh gọn cho khách mời đám cưới tra cứu số bàn ăn qua mã QR tại sảnh sự kiện. Để tối ưu thời gian triển khai và chi phí, tôi đã xây dựng hệ thống tra cứu tinh gọn bằng cách tùy biến plugin bảng dữ liệu thành một thanh tìm kiếm thông minh.\n\nHệ thống hỗ trợ tra cứu theo hai cột (Họ tên & Số bàn), đồng thời tích hợp dữ liệu tên có dấu và không dấu để đảm bảo khách mời vẫn tìm kiếm chính xác ngay cả khi thiết bị không cài đặt gõ tiếng Việt.",
+    "githubUrl": "",
+    "siteUrl": "",
+    "platforms": [
+      "2026",
+      "WordPress"
+    ],
+    "technologies": [
+      "wpDataTable",
+      "CSS"
+    ]
+  },
+  {
+    "date": "2026",
+    "title": "Form Service",
+    "description": "Đây là Landing Page tôi được giao xây dựng để người dùng vào mua vé, có logic về giảm giá khi mua số lượng nhiều, có giảm giá và tính thuế theo yêu cầu. Tích hợp thanh toán Paypal.",
+    "githubUrl": "",
+    "siteUrl": "https://intwomencelebration.org/ticker-2026/",
+    "platforms": [
+      "2026",
+      "WordPress"
+    ],
+    "technologies": [
+      "Forminator",
+      "Paypal"
     ]
   },
   {
@@ -95,7 +125,7 @@
       "2025",
       "WordPress",
       "E-Commerce"
-    ],
+    ], 
     "technologies": [
       "The7",
       "Elementor",
@@ -115,7 +145,7 @@
       "Elementor",
       "GG Sheet",
       "Optimize",
-      "Form"
+      "Forminator"
     ]
   }
 ]

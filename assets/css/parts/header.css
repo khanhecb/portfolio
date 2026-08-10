@@ -122,7 +122,7 @@ nav.nav-mobile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background: var(--color-base-hover);
     width: 100%;
     left: 0;
@@ -139,7 +139,7 @@ nav.nav-mobile {
     display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1281px) {
     .only-mobile,
     #header-mobile,
     .header-mobile {
@@ -147,7 +147,7 @@ nav.nav-mobile {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
     .only-desktop,
     #header-desktop {
         display: none !important;

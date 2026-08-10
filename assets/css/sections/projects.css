@@ -87,6 +87,7 @@ ul.project-platforms {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 12px;
     padding-left: 0;
     margin: 12px 0;
