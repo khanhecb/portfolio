@@ -6,7 +6,8 @@
     "githubUrl": "https://github.com/khanhecb/portfolio",
     "siteUrl": "https://khanhecb.vercel.app/",
     "platforms": [
-      "Landing Page"
+      "8/2026",
+      "LandingPage"
     ],
     "technologies": [
       "HTML/CSS",
@@ -15,20 +16,20 @@
     ]
   },
   {
-    "date": "2/2026",
-    "title": "Cpap - Bpharm",
-    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và có so sánh sản phẩm, thêm vào wishlist, kết nối Redis Object Cache để tăng tốc độ xử lý",
-    "githubUrl": "",
-    "siteUrl": "https://cpap.com.vn/",
+    "date": "7/2026",
+    "title": "Danh Ca Minh Cảnh",
+    "description": "Đây là dự án tập trung vào bán vé và tự động hóa việc bán vé và thanh toán. Vấn đề tôi phải giải quyết là dùng Python để kết với REST API để xử lý các việc Plugin chưa làm tốt và kết nối với Google Console để xử lý Google Sheet để cho mọi người quản lý.",
+    "githubUrl": "https://github.com/khanhecb/danhcaminhcanh",
+    "siteUrl": "https://danhcaminhcanh.com",
     "platforms": [
-      "WordPress",
-      "E-Commerce"
+      "7/2026",
+      "WordPress"
     ],
     "technologies": [
-      "Flatsome",
+      "Python",
       "Woocommerce",
-      "PHP",
-      "Redis"
+      "Gutenbern",
+      "Sepay"
     ]
   },
   {
@@ -38,6 +39,7 @@
     "githubUrl": "",
     "siteUrl": "https://guangnafurniture.com/",
     "platforms": [
+      "6/2026",
       "WordPress",
       "Furniture"
     ],
@@ -49,29 +51,13 @@
     ]
   },
   {
-    "date": "7/2026",
-    "title": "Danh Ca Minh Cảnh",
-    "description": "Đây là dự án tập trung vào bán vé và tự động hóa việc bán vé và thanh toán. Vấn đề tôi phải giải quyết là dùng Python để kết với REST API để xử lý các việc Plugin chưa làm tốt và kết nối với Google Console để xử lý Google Sheet để cho mọi người quản lý.",
-    "githubUrl": "https://github.com/khanhecb/danhcaminhcanh",
-    "siteUrl": "https://danhcaminhcanh.com",
-    "platforms": [
-      "WordPress",
-      "E-Commerce"
-    ],
-    "technologies": [
-      "Python",
-      "Woocommerce",
-      "Gutenbern",
-      "Sepay"
-    ]
-  },
-  {
     "date": "5/2026",
     "title": "Trutech Mfg",
     "description": "Dự án yêu cầu chỉ làm UI và bàn giao lại Source Code và Database cho bên khách hàng, vì họ có BackEnd Dev để quản trị. Vai trò của tôi là cài đặt theme import data theme, lấy nội dung từ Web cũ qua, tích hợp chức năng Light/Dark Mode bằng CSS, và làm một số hiệu ứng theo yêu cầu",
     "githubUrl": "",
     "siteUrl": "https://trutech-mfg.com.vn/",
     "platforms": [
+      "5/2026",
       "WordPress",
       "Brand"
     ],
@@ -82,12 +68,31 @@
     ]
   },
   {
+    "date": "2/2026",
+    "title": "Cpap - Bpharm",
+    "description": "Đây là dự án E-Commerce bán sản phẩm y tế (Máy thở) được xây dựng bằng Flatsome và có so sánh sản phẩm, thêm vào wishlist, kết nối Redis Object Cache để tăng tốc độ xử lý",
+    "githubUrl": "",
+    "siteUrl": "https://cpap.com.vn/",
+    "platforms": [
+      "4/2026",
+      "WordPress",
+      "E-Commerce"
+    ],
+    "technologies": [
+      "Flatsome",
+      "Woocommerce",
+      "PHP",
+      "Redis"
+    ]
+  },
+  {
     "date": "2025",
     "title": "Cricket Fashion",
     "description": "Trong Project này nhiệm vụ của tôi là cài đặt Theme The7, import data, setting Elementor toàn cục, kéo thả Layout Header/ Footer theo đúng yêu cầu",
     "githubUrl": "",
     "siteUrl": "https://cricketfashion.com",
     "platforms": [
+      "2025",
       "WordPress",
       "E-Commerce"
     ],
@@ -103,12 +108,14 @@
     "githubUrl": "",
     "siteUrl": "https://sleepfi.vn",
     "platforms": [
+      "2025-2026",
       "WordPress"
     ],
     "technologies": [
-      "Google Sheet",
-      "Forminator",
-      "Optimize Web"
+      "Elementor",
+      "GG Sheet",
+      "Optimize",
+      "Form"
     ]
   }
 ]

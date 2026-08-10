@@ -1,53 +1,15 @@
-/* Header */
-#header {
-    width: 100%;
-    background: var(--color-base-hover);
-    padding: var(--spacing-md) var(--spacing-xl);
-    box-shadow: 1px 2px 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
-}
-
-#nav {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
-
-#nav:last-child {
-    padding-right: 0;
-}
-
-.nav-item {
-    padding: 12px 24px;
-}
-
-.nav-item:hover {
-    color: var(--color-primary);
-    .nav-title{
-        color: var(--color-primary);
-        font-weight: var(--font-weight-medium);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .projects-title,
-    .skills-title {
-        text-align: center;
-    }
-}
-
-#nav-mobile {
-    fill: var(--color-primary);
-}
-
-
 #header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     height: 80px;
+    padding: 24px;
+    background: var(--color-base-hover);
+    box-shadow: 1px 2px 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: block;
 }
 
 #header.header-hidden {
@@ -58,6 +20,34 @@
     box-shadow: 0 4px 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
 }
 
+.header-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 12px 24px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item:hover {
+    color: var(--color-primary);
+}
+
+.nav-item:hover .nav-title {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-medium);
+}
 
 #header-desktop {
     display: flex;
@@ -65,25 +55,137 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding-top: 0;
-    margin-right: 0;
-    gap: 0;
 }
 
 #header-mobile {
-    display: flex;
-    flex-direction: row;
+    display: none;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-@media screen and (max-width: 1024px) {
-    #header-mobile {
-        display: none;
+.header-mobile-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-bar-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#nav-mobile-icon,
+.burger-icon {
+    fill: var(--color-primary);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#nav-mobile-icon.is-active {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.mobile-panel-content {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: calc(100% + 24px);
+    background-color: var(--color-base-hover, #0a192f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+
+    /* Hiệu ứng ẩn hiện mượt mà */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.mobile-panel-content.is-active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+nav.nav-mobile {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-base-hover);
+    width: 100%;
+    left: 0;
+    text-align: left;
+}
+
+/* Logic toggle menu cũ giữ nguyên đề phòng HTML chưa đổi */
+#header-mobile.active .only-mobile {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-mobile .header-nav-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 769px) {
+    .only-mobile,
+    #header-mobile,
+    .header-mobile {
+        display: none !important;
     }
 }
 
-.nav-mobile {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 768px) {
+    .only-desktop,
+    #header-desktop {
+        display: none !important;
+    }
+
+    #header-mobile {
+        display: flex !important;
+    }
+
+    .projects-title,
+    .skills-title {
+        text-align: center;
+    }
+}
+
+#nav-mobile-icon,
+.burger-icon {
+    fill: var(--color-primary);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    transform-origin: center;
+}
+
+/* BỔ SUNG THÊM .burger-icon.is-active ĐỂ BAO QUÁT HẾT TRƯỜNG HỢP */
+#nav-mobile-icon.is-active,
+.burger-icon.is-active {
+    transform: rotate(90deg) scale(1.1);
+}
+
+.burger-icon {
+    fill: var(--color-primary);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: inline-block; /* Bắt buộc phải có để dùng được lệnh transform */
+    transform-origin: center;
+}
+
+#header-mobile.active .burger-icon {
+    transform: rotate(90deg) scale(1.1);
 }
