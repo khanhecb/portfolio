@@ -14,11 +14,11 @@
 }
 
 .portfolio-name {
-    font-size: clamp(1.8rem, 4vw, 4rem);
+    font-size: clamp(2rem, 4vw, 4rem);
     margin: 0;
 }
 
-section#about{
+section#about {
     padding: 24px 0;
     margin: 120px 0;
 }
@@ -26,4 +26,12 @@ section#about{
 h5.portfolio-description-subtitle {
     font-size: clamp(1rem, 1vw, 2rem);
     margin: 0;
+}
+
+.portfolio-description {
+    color: var(--text-color-secondary);
+}
+
+.portfolio-description strong {
+    color: var(--text-color-primary);
 }

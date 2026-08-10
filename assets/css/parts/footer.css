@@ -93,6 +93,25 @@
     font-size: var(--font-size-smaller); /* 0.8em ~ 12.8px: Dòng bản quyền & tech stack ở đáy */
 }
 
+@media screen and (max-width: 1024px) {
+    #footer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer .brand-desc {
+        display: flex;
+        justify-content: center;
+        justify-self: center
+    }
+
+    .brand-name {
+        font-size: clamp(1.6rem, 4vw, 2rem);
+    }
+}
+
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
@@ -104,3 +123,5 @@
         text-align: center;
     }
 }
+
+
