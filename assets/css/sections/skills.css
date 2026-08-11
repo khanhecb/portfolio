@@ -30,6 +30,7 @@
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255,255,255, 0.1);
 }
 
 .skill-grid-item i {
@@ -80,5 +81,3 @@
 .skill-grid-item.ssh:hover i { color: #ffffff; filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.3)); }
 .skill-grid-item.vercel:hover i { color: #ffffff; filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.5)); }
 .skill-grid-item.cloudflare:hover i { color: #F38020; filter: drop-shadow(0 0 12px rgba(243, 128, 32, 0.4)); }
-
-

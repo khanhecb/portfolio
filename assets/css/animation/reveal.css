@@ -1,0 +1,14 @@
+/* Trạng thái ẩn ban đầu */
+.reveal {
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+/* Trạng thái khi JS kích hoạt */
+.reveal.active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

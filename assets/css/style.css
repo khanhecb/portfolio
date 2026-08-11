@@ -7,6 +7,9 @@
 @import url('parts/header.css');
 @import url('parts/footer.css');
 
+/* Animation */
+@import url('animation/reveal.css');
+
 /* Section */
 @import url('sections/contact.css');
 @import url('sections/about.css');

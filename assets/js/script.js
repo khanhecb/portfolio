@@ -117,10 +117,10 @@ async function renderSectionProject(dataFile = './data/projects.json', container
             : '';
 
         return `
-                <li class="project-card">
-                    <div class="project-inner">
-                        <div class="project-header">
-                            <div class="project-feature">
+                <li class="project-card reveal">
+                    <div class="project-inner reveal">
+                        <div class="project-header reveal">
+                            <div class="project-feature reveal">
                                 <a href="${siteUrl}" target="_blank" class="project-feature-icon">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="60" height="60">
                                         <path d="M128 464L512 464C520.8 464 528 456.8 528 448L528 208C528 199.2 520.8 192 512 192L362.7 192C345.4 192 328.5 186.4 314.7 176L276.3 147.2C273.5 145.1 270.2 144 266.7 144L128 144C119.2 144 112 151.2 112 160L112 448C112 456.8 119.2 464 128 464zM512 512L128 512C92.7 512 64 483.3 64 448L64 160C64 124.7 92.7 96 128 96L266.7 96C280.5 96 294 100.5 305.1 108.8L343.5 137.6C349 141.8 355.8 144 362.7 144L512 144C547.3 144 576 172.7 576 208L576 448C576 483.3 547.3 512 512 512z"/>
@@ -128,21 +128,21 @@ async function renderSectionProject(dataFile = './data/projects.json', container
                                 </a>
                             </div>
 
-                            <div class="project-actions">
+                            <div class="project-actions reveal">
                                 ${githubHTML}
                                 ${siteHTML}
                             </div>
                         </div>
 
-                        <div class="project-body">
-                            <h3 class="project-title">${title}</h3>
-                            <ul class="project-platforms">
+                        <div class="project-body reveal">
+                            <h3 class="project-title reveal">${title}</h3>
+                            <ul class="project-platforms reveal">
                                 ${platformTagHTML}
                             </ul>
-                            <p class="project-description">${description || ''}</p>
+                            <p class="project-description reveal">${description || ''}</p>
                         </div>
-                        <div class="project-footer">
-                            <ul class="project-tags">
+                        <div class="project-footer reveal">
+                            <ul class="project-tags reveal">
                                 ${technologiesTagHTML}
                             </ul>
                         </div>
@@ -155,7 +155,7 @@ async function renderSectionProject(dataFile = './data/projects.json', container
     container.innerHTML = `
             <div class="projects-container">
                 <h2 class="projects-title">Projects</h2>
-                <ul class="projects-list">
+                <ul class="projects-list reveal">
                     ${projectItemsHTML}
                 </ul>
             </div>
@@ -196,44 +196,43 @@ async function renderSectionSkills(containerId = 'skills', jsonUrl = '/data/skil
     // Render HTML
     container.innerHTML = `
       <div class="skills-grid-container">
-        <h2 class="skills-title">${data.title}</h2>
-        <div class="skills-icon-grid">
+        <h2 class="skills-title reveal">${data.title}</h2>
+        <div class="skills-icon-grid reveal">
           ${skillsHTML}
         </div>
       </div>
     `;
 }
 
+function initScrollReveal() {
+    if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0,
+        rootMargin: "0px 0px -20px 0px"
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+}
+
 async function initApp() {
     await loadIncludes();
-    renderSectionProject();
-    renderSectionSkills();
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', animationScrollHeader);
-    } else {
-        animationScrollHeader();
-    }
+    await Promise.all([
+        renderSectionProject(),
+        renderSectionSkills()
+    ]);
+    animationScrollHeader();
+    initScrollReveal();
 }
 
 document.addEventListener('DOMContentLoaded', initApp);
-
-document.addEventListener('click', function(event) {
-    // Kiểm tra xem phần được click có phải là .burger-icon hoặc nằm bên trong .burger-icon không
-    const burgerIcon = event.target.closest('.burger-icon');
-
-    if (burgerIcon) {
-        const headerMobile = document.getElementById('header-mobile');
-        if (headerMobile) {
-            headerMobile.classList.toggle('active');
-        }
-    }
-
-    // Tự động đóng menu khi click vào link bên trong menu mobile
-    if (event.target.closest('#header-mobile .only-mobile a')) {
-        const headerMobile = document.getElementById('header-mobile');
-        if (headerMobile) {
-            headerMobile.classList.remove('active');
-        }
-    }
-});
