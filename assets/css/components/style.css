@@ -1,0 +1,41 @@
+@import url('../base/root.css');
+@import url('../base/reset.css');
+@import url('../base/layout.css');
+@import url('../base/typography.css');
+
+/* Part */
+@import url('../parts/header.css');
+@import url('../parts/footer.css');
+
+/* Animation */
+@import url('../animation/reveal.css');
+
+/* Section */
+@import url('../sections/contact.css');
+@import url('../sections/about.css');
+@import url('../sections/skills.css');
+@import url('../sections/projects.css');
+
+/* Component */
+@import url('button.css');
+@import url('text.css');
+
+@import url('../preload.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

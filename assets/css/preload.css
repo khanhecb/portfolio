@@ -26,8 +26,8 @@
 #preloader.hidden {
     opacity: 0;
     visibility: hidden;
-    pointer-events: none; /* Tránh click trúng preloader khi đang mờ dần */
-    transform: scale(1.08); /* Phóng nhẹ 8% tạo hiệu ứng xé/chui vào trang */
+    pointer-events: none;
+    transform: scale(1.08);
 }
 
 .loader-box {
