@@ -1,17 +1,18 @@
 import { initScrollReveal } from './animation/reveal.js';
 import { renderSectionSkills } from './components/skills.js';
 import { renderSectionProject } from './components/projects.js';
+import { renderSectionJourney } from './components/journey.js';
 import { initCyberLaserPreloader } from './components/preload.js';
 import {
     animationScrollHeader,
     headerMobileShowMenu
 } from './components/header.js';
 
-// 1. Kích hoạt Preloader NGAY LẬP TỨC để phủ màn hình trước khi render
+// Trigger Preload
 initCyberLaserPreloader(1200);
 
 /**
- * Load tất cả các thành phần HTML tĩnh (Header, Footer, Nav...)
+ * Load All HTML Section
  */
 async function loadIncludes() {
     const includes = document.querySelectorAll("[data-include]");
@@ -35,32 +36,29 @@ async function loadIncludes() {
 }
 
 /**
- * Khởi chạy toàn bộ ứng dụng
+ * Init app
  */
 async function initApp() {
     try {
-        // Step 1: Load Layout Skeleton (Header/Footer...)
         await loadIncludes();
 
-        // Step 2: Gán sự kiện Header ngay khi Header HTML đã có trong DOM
         animationScrollHeader();
         headerMobileShowMenu();
 
-        // Step 3: Fetch & Render dữ liệu động song song (Parallel execution)
         await Promise.allSettled([
             renderSectionSkills(),
             renderSectionProject(),
+            renderSectionJourney(),
         ]);
 
+
     } catch (error) {
-        console.error("Lỗi trong quá trình khởi tạo ứng dụng:", error);
+        console.error("ERROR When init:", error);
     } finally {
-        // Step 4: Kích hoạt Scroll Reveal sau khi toàn bộ HTML & Dynamic Data đã lên DOM
         initScrollReveal();
     }
 }
 
-// Kiểm tra DOM ready an toàn cho ES Module
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initApp);
 } else {

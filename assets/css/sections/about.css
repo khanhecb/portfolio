@@ -20,7 +20,7 @@
 
 section#about {
     padding: 24px 0;
-    margin: 120px 0;
+    margin-top: 120px;
 }
 
 h5.portfolio-description-subtitle {
@@ -34,4 +34,18 @@ h5.portfolio-description-subtitle {
 
 .portfolio-description strong {
     color: var(--text-color-primary);
+}
+
+ul.about-list-skills {
+    color: var(--text-color-secondary);
+}
+
+ul.about-list-skills > li::marker {
+    color: var(--color-primary);
+}
+
+@media  screen and (max-width: 767px) {
+    section#about {
+        margin-top: 80px;
+    }
 }

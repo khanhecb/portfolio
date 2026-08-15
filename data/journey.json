@@ -1,0 +1,115 @@
+[
+  {
+    "index": 4,
+    "time": "1-8/2026",
+    "title": "Full-stack WordPress Dev",
+    "description": [
+      "<strong>Trách nhiệm trong công việc:</strong> Maintenance, Admin, Deploy, đề xuất giải pháp, xây dựng Website theo yêu cầu.",
+      "Trực tiếp tư vấn giải pháp, xử lý sự cố và build Website từ đầu theo yêu cầu khách hàng.",
+      "Hổ trợ cấu hình DNS qua: Mắt Bão, PA Việt Nam.",
+      "Kết nối thanh toán ngân hàng qua Sepay",
+      "Làm chủ Flatsome, can thiệp sâu bằng PHP Hook để xử lý các logic kinh doanh đặc thù.",
+      "Học tập, xây dựng và triển khai Landing Page Portfolio bằng HTML/CSS/JS Vanilla (Fetch JSON) trên Vercel.",
+      "Xử lý thiếu sót của plugin từ bên ngoài (Python + CRON + REST API).",
+      "Hosting: SSH, FTP, cPanel, DirectAdmin.",
+      "<strong>Tự học và tìm hiểu thêm công cụ:</strong>",
+      "Sử dụng: Google Search Console (GG Sheet, GG Drive), Google Flush Cache, CloudFlare, Vercel, Git/Github.",
+      "Media Processing: Xử lý ảnh cơ bản (Crop, Compress, Format, Resize).",
+      "Service Hosting: Redis, Backup, PHP Init.",
+      "Woocommerce: Log, Action Scheduler, WooREST.",
+      "Dev Tool: WPScan, Git/Github, Linux Mint Eco",
+      "Tìm hiểu: WP FSE (Block), Headless WordPress, WP_Query Optimize,"
+    ],
+    "tags": [
+      "UI/UX",
+      "Redis",
+      "CloudFlare",
+      "Vercel",
+      "HTML/CSS",
+      "JS Vanilla",
+      "REST API",
+      "Python",
+      "WP DB",
+      "SSH",
+      "FTP"
+    ]
+  },
+  {
+    "index": 3,
+    "time": "2025",
+    "title": "",
+    "description": [
+      "<strong>Trách nhiệm:</strong> Maintenance, hổ trợ kỹ thuật khách hàng (content), xây dựng website WordPress theo yêu cầu, xây dựng landing page.",
+      "<strong>Nắm vững WordPress Core</strong>: Hook, CPT, Shortcode, WP Database (EAV).",
+      "<strong>Làm chủ môi trường Dev</strong>: WP-CLI, Local,",
+      "Dùng Theme dựng sẵn (The7, Elementor) để triển khai nhanh Web.",
+      "Viết Plugin tùy chỉnh hệ thống theo yêu cầu.",
+      "Cấu hình hệ thống nâng cao: DNS, Google Workspace Email, SMTP, quản lý Backup và bảo trì hệ thống.",
+      "Sử dụng Flatsome để build Website theo yêu cầu.",
+      "Sử dụng PHP tùy chỉnh và xử lý data theo yêu cầu qua Hook",
+      "Giải quyết vấn đề: Tạo QR trên Website, Form thanh toán, Form thông tin.",
+      "Cấu hình: DNS, Tạo tài khoản GG WorkSpace, Web Mail",
+      "Maintenance, Backup, hổ trợ kỹ thuật cho khách hàng và content.",
+      "Dựng Landing Page",
+      "Debug: WordPress Log, Query Monitor",
+      "<strong>Mục tiêu:</strong>",
+      "Cải thiện UI/UX.",
+      "Xử lý các vấn đề gấp bằng Plugins có sẵn.",
+      "Tận dụng và sử dụng các thứ có sẵn trong WordPress <strong>(Không làm lại bánh xe)</strong>"
+    ],
+    "tags": [
+      "Flatsome",
+      "WP-CLI",
+      "Elementor",
+      "WordPress Theme",
+      "Local",
+      "Paypal",
+      "Form",
+      "Maintenance",
+      "Hosting",
+      "HTML/CSS",
+      "Hook",
+      "Bash Script"
+    ]
+  },
+  {
+    "index": 2,
+    "time": "2024",
+    "title": "Bắt đầu dự án WordPress đầu tiên và project ở trường đại học",
+    "description": [
+      "<strong>Làm quen với hệ sinh thái Web :</strong> HTML, CSS, PHP, thao tác cPanel, cấu hình DNS và quản trị CSDL qua phpMyAdmin.",
+      "<strong>Làm các Project ở trường đại học: </strong> Làm về hệ thống nhận diện biển số xe, tích hợp AI nhận diện biển số xe, dùng Python để xây dựng UI xử lý song song 2 Camera, tạo ứng dụng App Python, giao tiếp với ESP32 qua Google Firebase.",
+      "<strong>Triển khai dự án thực tế đầu tiên: </strong>Xây dựng Form đăng ký khám bệnh kết nối Google Sheets và tự động gửi Email qua giao thức SMTP.",
+      "<strong>Sử dụng:</strong> XAMPP, SMTP, Google Script (Google Sheet)."
+    ],
+    "tags": [
+      "WordPress",
+      "Database",
+      "phpMyadmin",
+      "cPanel",
+      "XAMPP",
+      "SMTP",
+      "Google Sheet",
+      "Python"
+    ]
+  },
+  {
+    "index": 1,
+    "time": "2020-2023",
+    "title": "Xây dựng Nền tảng Kỹ thuật Hệ thống",
+    "description": [
+      "Nền tảng kỹ thuật từ chuyên ngành <strong>KỸ THUẬT MÁY TÍNH</strong> từ trường UTE.",
+      "Quen thuộc với <strong>Linux OS (Ubuntu)</strong>.",
+      "<strong>Học tập lập trình cơ bản: </strong>HTML, CSS, JS, C/C++, Python",
+      "Học tập chuyên ngành về máy tính: Mạng máy tính, IoT, Hệ điều hành, kiến trúc máy tính, DSA, OOP...",
+      "Tự học <strong>Auzre</strong> trên Microsoft Learn."
+    ],
+    "tags": [
+      "HTML/CSS",
+      "JS Basic",
+      "Python Basic",
+      "Linux (Ubuntu)",
+      "Azure"
+    ]
+  }
+]

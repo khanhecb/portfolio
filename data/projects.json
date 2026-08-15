@@ -2,7 +2,7 @@
   {
     "date": "8/2026",
     "title": "Portfolio",
-    "description": "Dự án giới thiệu bản thân được viết bằng HTML, CSS, JS Vanilla. Triển khai trên Vercel, Code lưu trữ ở Github.",
+    "description": "Đây là Project đầu tiên sử dụng thuần HTML/CSS và JS Vanilla (ES6), sử dụng Fetch API để đọc JSON và render ra các Section. Dự án giới thiệu bản thân được viết bằng HTML, CSS, JS Vanilla. Triển khai trên Vercel, Code lưu trữ ở Github.",
     "githubUrl": "https://github.com/khanhecb/portfolio",
     "siteUrl": "https://khanhecb.vercel.app/",
     "platforms": [
@@ -11,7 +11,8 @@
     ],
     "technologies": [
       "HTML/CSS",
-      "JS Vanilla",
+      "Vanilla JS",
+      "Fetch API",
       "Vercel"
     ]
   },

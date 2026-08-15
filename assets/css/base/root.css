@@ -6,7 +6,7 @@
     --color-primary: #00e5ff;
     --color-primary-hover: #5eead410;
     --color-accent: #fdfdfd;
-    --color-accent-glow: rgba(45, 212, 191, 0.15);
+    --color-accent-glow: rgba(56, 189, 248, 0.1);
     --border-color: #334155;
 
     --color-secondary: #fff;
@@ -46,8 +46,9 @@
 
     /* Breakpoint */
     --tablet-breakpoint: 1024px;
-}
 
+    /* */
+}
 
 @media  screen and (max-width: 768px) {
     :root {

@@ -70,7 +70,13 @@ main > aside {
 
 section {
     margin-top: var(--spacing-xs);
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    section {
+        margin-bottom: 40px;
+    }
 }
 
 .container {
