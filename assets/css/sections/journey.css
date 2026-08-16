@@ -1,4 +1,7 @@
-/* Layout Grid 3:7 */
+#journey {
+    min-height: 700px;
+}
+
 .component-tabs {
     display: grid;
     grid-template-columns: 200px 1fr;
